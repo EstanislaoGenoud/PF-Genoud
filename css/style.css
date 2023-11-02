@@ -160,7 +160,8 @@ nav.navegacion {
 }
 
 .titulo-m {
-    margin-left: 380px;
+    text-align: center;
+    margin: 20px;
 }
 .monumentos {
     display: flex;
@@ -169,7 +170,6 @@ nav.navegacion {
     height: 100%;
     align-content: initial;
     justify-content: space-around;
-    
     gap: 40px;
 }
 
@@ -183,15 +183,19 @@ nav.navegacion {
     /* fin de monumentos */
     /* grandes vueltas */
 .titulo-gt {
-    margin-left: 580px;
+    text-align: center;
 }
 
+.grandes-vueltas {
+    width: 100%;
+    position: relative;    
+}
 
 
 .giro-de-italia {
     display: flex;
-    width: 100%;
-    margin-left: 10px;
+    width: 97%;
+    margin-left: 15px;
     overflow-x: scroll;
     gap: 1.4rem;
     scrollbar-width: none;
@@ -199,8 +203,8 @@ nav.navegacion {
 
 .tour-de-francia {
     display: flex;
-    width: 100%;
-    margin-left: 10px;
+    width: 97%;
+    margin-left: 15px;
     overflow-x: scroll;
     gap: 1.4rem;
     scrollbar-width: none;
@@ -208,8 +212,8 @@ nav.navegacion {
 
 .vuelta-españa {
     display: flex;
-    width: 100%;
-    margin-left: 10px;
+    width: 97%;
+    margin-left: 15px;
     overflow-x: scroll;
     gap: 1.4rem;
     scrollbar-width: none;
@@ -338,11 +342,9 @@ cursor: pointer;
     
 }
 .texto-pdp div {
-    /* background-color: red; */
     width: 150px;
     margin: 10px;
     text-align: center;
-    /* line-height: 75px; */
     font-size: 15px;
 }
 
