@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+    <!-- customs styles -->
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shorcut icon" href="../images/logociclismo.png">
+    <title>Road Cycling</title>
+</head>
+<body>
+  <header>
+    <nav class="navegacion">
+      <!-- logo -->
+    <div class="logo--container">
+      <img 
+      src="../images/logociclismo.png" 
+      alt="logo de ciclismo"
+      class="logo">
+    </div>
+      <!-- menu mobile -->
+      <input type="checkbox" id="check--menu">
+      <ul class="navegacion--nav">
+        <li class="nav--item active">
+          <a href="../index.html">
+            Inicio
+          </a>
+        </li>
+        <li class="nav--item">
+          <a href="./monuments.html">
+            Monumentos
+          </a>
+        </li>
+        <li class="nav--item">
+          <a href="./grandtours.html">
+            Grandes vueltas
+          </a>
+        </li>
+        <li class="nav--item">
+          <a href="./teams.html">
+            Equipos
+          </a>
+        </li>
+        <li class="nav--item">
+          <a href="./contacto.html">
+            Contacto
+          </a>
+        </li>
+      </ul>
+      <label for="check--menu">
+        <i><img src="../images/menu-regular-48.png" alt=""></i>
+      </label>
+  </nav>
+  </header>
+  <section class="fondo"></section>
+  <div class="titulo-equipos">
+    <h1>Equipos</h1>
+  </div>
+  <!-- <section class="grilla-equipos">
+    <div class="seccion-equipos">
+      WT 
+            <div class="wt"><h3>WT</h3></div>
+            <div class="tjv">
+              <p>Jumbo Visma</p>
+              <img src="../images/equipos/WT/TJV.png" alt="equipo jumbo visma">
+            </div>
+            <div class="uad">
+              <p>UAE Team Emirates </p>
+              <img src="../images/equipos/WT/UAD.png" alt="">
+            </div>
+            <div class="tfs">
+              <p>LIDL-TREK</p>
+              <img src="../images/equipos/WT/TFS.png" alt="" class="trek">
+            </div>
+            <div class="tbv">
+              <p>Bahrain Victoriuos</p>
+              <img src="../images/equipos/WT/TBV.png" alt="">
+            </div>
+            <div class="soq">
+              <p>Soudal Quick-Step</p>
+              <img src="../images/equipos/WT/SOQ.png" alt="">
+            </div>
+            <div class="mov">
+              <p>Movistar Team</p>
+              <img src="../images/equipos/WT/MOV.png" alt="">
+            </div>
+            <div class="jay">
+              <p>Team Jayco Alula</p>
+              <img src="../images/equipos/WT/JAY.png" alt="">
+            </div>
+            <div class="igd">
+              <p>Ineos Grenadiers</p>
+              <img src="../images/equipos/WT/IGD.png" alt="">
+            </div>
+            <div class="icw">
+              Intermaché-Circus-Wanty
+              <img src="../images/equipos/WT/ICW.png" alt="">
+            </div>
+            <div class="gfc">
+              <p>Groupama - FDJ</p>
+              <img src="../images/equipos/WT/GFC.png" alt="">
+            </div>
+            <div class="efe">
+              <p>EF Education - Easypost</p>
+              <img src="../images/equipos/WT/EFE.png" alt="">
+            </div>
+            <div class="dsm">
+              <p>Team DSM - Firemenich</p>
+              <img src="../images/equipos/WT/DSM.png" alt="">
+            </div>
+            <div class="cof">
+              <p>Cofidis</p>
+              <img src="../images/equipos/WT/COF.png" alt="">
+            </div>
+            <div class="boh">
+              <p>Bora - Hansgrohe</p>
+              <img src="../images/equipos/WT/BOH.png" alt="">
+            </div>
+            <div class="ast">
+              <p>Astana Qazaqstan Team</p>
+              <img src="../images/equipos/WT/AST.png" alt="">
+            </div>
+            <div class="ark">
+              <p>Team Arkea - Samsic</p>
+              <img src="../images/equipos/WT/ARK.png" alt="">
+            </div>
+            <div class="adc">
+              <p>Alpecin - Deceuninck</p>
+              <img src="../images/equipos/WT/ADC.png" alt="">
+            </div>
+            <div class="act">
+              <p>AG2R Citroen Team</p>
+              <img src="../images/equipos/WT/ACT.png" alt="">
+            </div>
+            CP 
+          <div class="cp">
+            <h3>CP</h3>
+          </div>
+            <div class="bbh">
+              <p>Burgos-BH</p>
+              <img src="../images/equipos/CP/BBH.jpg" alt="">
+            </div>
+            <div class="cjr">
+              <p>Caja Rural-SegurosRGA</p>
+              <img src="../images/equipos/CP/CJR.jpg" alt="">
+            </div>
+            <div class="cor">
+              <p>Corratec Selle Italia</p>
+              <img src="../images/equipos/CP/COR.jpg" alt="">
+            </div>
+            <div class="ekp">
+              <p>Equipo Kern Pharma</p>
+              <img src="../images/equipos/CP/EKP.jpg" alt="">
+            </div>
+            <div class="eok">
+              <p>Eolo - Kometa Cycling Team</p>
+              <img src="../images/equipos/CP/EOK.jpg" alt="">
+            </div>
+            <div class="eus">
+              <p>Euskatel - Euskadi</p>
+              <img src="../images/equipos/CP/EUS.jpg" alt="">
+            </div>
+            <div class="gbf">
+              <p>Green Project-Bardiani CSF-Faizane</p>
+              <img src="../images/equipos/CP/GBF.jpg" alt="">
+            </div>
+            <div class="hpm">
+              <p>Human Powered Healt</p>
+              <img src="../images/equipos/CP/HPM.jpg" alt="">
+            </div>
+            <div class="ipt">
+              <p>Israel - Premier Tech</p>
+              <img src="../images/equipos/CP/IPT.jpg" alt="">
+            </div>
+            <div class="ltd">
+              <p>Lotto Dstny</p>
+              <img src="../images/equipos/CP/LTD.jpg" alt="">
+            </div>
+            <div class="q36">
+              <p>Q36.5 Pro Cycling Team</p>
+              <img src="../images/equipos/CP/Q36.jpg" alt="">
+            </div>
+            <div class="ten">
+              <p>TotalEnergies</p>
+              <img src="../images/equipos/CP/TEN.jpg" alt="">
+            </div>
+            <div class="tfb">
+              <p>Team Flanders - Baloise</p>
+              <img src="../images/equipos/CP/TFB.jpg" alt="">
+            </div>
+            <div class="tnn">
+              <p>Team Novo Nordisk</p>
+              <img src="../images/equipos/CP/TNN.jpg" alt="">
+            </div>
+            <div class="uno">
+              <p>Uno - x Pro Cycling Team</p>
+              <img src="../images/equipos/CP/UXT.jpg" alt="">
+            </div>
+          </div>
+          </section> -->
+  <main>
+  
+    <div class="container text-center">
+      <h3>UCI World Teams</h3>
+      <div class="row">
+        <div class="col">
+          <h5>Jumbo Visma</h5>
+          <img src="../images/equipos/WT/TJV.png" alt="">
+        </div>
+        <div class="col">
+          <h5>UAE Team Emirates</h5>
+          <img src="../images/equipos/WT/UAD.png" alt="">
+        </div>
+        <div class="col">
+          <h5>LIDL-TREK</h5>
+          <img src="../images/equipos/WT/TFS.png" alt="" class="trek">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Bahrain Victorious</h5>
+          <img src="../images/equipos/WT/TBV.png" alt="">
+        </div>
+        <div class="col">
+          <h5>Soudal Quick-Step</h5>
+          <img src="../images/equipos/WT/SOQ.png" alt="">
+        </div>
+        <div class="col">
+          <h5>Movistar Team</h5>
+          <img src="../images/equipos/WT/MOV.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Team Jayco Alula</h5>
+          <img src="../images/equipos/WT/JAY.png" alt="">
+        </div>
+        <div class="col">
+          <h5>Ineos Grenadiers</h5>
+          <img src="../images/equipos/WT/IGD.png" alt="">
+        </div>
+        <div class="col">
+          <h5>Intermache - Circus - Wanty</h5>
+          <img src="../images/equipos/WT/ICW.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Groupama - FDJ</h5>
+          <img src="../images/equipos/WT/GFC.png" alt="">
+        </div>
+        <div class="col">
+          <h5>EF Education - EasyPost</h5>
+          <img src="../images/equipos/WT/EFE.png" alt="">
+        </div>
+        <div class="col">
+          <h5>Team Dsm - Firmenich</h5>
+          <img src="../images/equipos/WT/DSM.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Cofidis</h5>
+          <img src="../images/equipos/WT/COF.png" alt="">
+        </div>
+        <div class="col">
+          <h5>Bora - Hansgrohe</h5>
+          <img src="../images/equipos/WT/BOH.png" alt="">
+        </div>
+        <div class="col">
+          <h5>Astana Qazaqstan Team</h5>
+          <img src="../images/equipos/WT/AST.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Team Arkea - Samsic</h5>
+          <img src="../images/equipos/WT/ARK.png" alt="">
+        </div>
+        <div class="col">
+          <h5>Alpecin - Deceuninck</h5>
+          <img src="../images/equipos/WT/ADC.png" alt="">
+        </div>
+        <div class="col">
+          <h5>AG2R Citroen Team</h5>
+          <img src="../images/equipos/WT/ACT.png" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <div class="container text-center">
+      <h3>UCI Pro Teams</h3>
+      <div class="row">
+        <div class="col">
+          <h5>Burgos - BH</h5>
+          <img src="../images/equipos/CP/BBH.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Caja Rural - SegurosRGA</h5>
+          <img src="../images/equipos/CP/CJR.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Corratec Selle Italia</h5>
+          <img src="../images/equipos/CP/COR.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Equipo Kern Pharma</h5>
+          <img src="../images/equipos/CP/EKP.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Eolo - Kometa Cycling Team</h5>
+          <img src="../images/equipos/CP/EOK.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Euskaltel - Euskadi</h5>
+          <img src="../images/equipos/CP/EUS.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Green Project - BardianiCSF - Faizane</h5>
+          <img src="../images/equipos/CP/GBF.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Human Powered Health</h5>
+          <img src="../images/equipos/CP/HPM.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Israel - Premier Tech</h5>
+          <img src="../images/equipos/CP/IPT.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Lotto Dstny</h5>
+          <img src="../images/equipos/CP/LTD.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Q36.5 Pro Cycling Team</h5>
+          <img src="../images/equipos/CP/Q36.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>TotalEnergies</h5>
+          <img src="../images/equipos/CP/TEN.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Team Flanders - Baloise</h5>
+          <img src="../images/equipos/CP/TFB.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Team Novo Nordisk</h5>
+          <img src="../images/equipos/CP/TNN.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Tudor Pro Cycling Team</h5>
+          <img src="../images/equipos/CP/TUD.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Uno - X Pro Cycling Team</h5>
+          <img src="../images/equipos/CP/UXT.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Bolton Equities Black Spoke</h5>
+          <img src="../images/equipos/CP/BEB.jpg" alt="">
+        </div>
+        <div class="col">
+          <h5>Bingoal WB</h5>
+          <img src="../images/equipos/CP/BWB.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  
+  <hr class="linea">
+  <footer class="pie-de-pagina">
+    <section class="pdp">
+      <nav class="nav-bar-1">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./monuments.html">Monumentos</a></li>
+          <li><a href="./grandtours.html">Grandes vueltas</a></li>
+          <li><a href="./teams.html">Equipos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="texto-pdp">
+      <div>
+        <p>pagina sin fines de lucro</p>
+      </div>
+      <div>
+        <p>Pagina creada por Estanislao Genoud</p>
+      </div>
+    </section>
+  </footer>
+  <!-- bootstrap js -->
+  <script src="../js/bootstrap.js"></script>
+</body>
+</html>

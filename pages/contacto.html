@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+    <!-- customs styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shorcut icon" href="../images/logociclismo.png">
+    <title>Road Cycling</title>
+</head>
+<body>
+  <header>
+    <nav class="navegacion">
+      <!-- logo -->
+    <div class="logo--container">
+      <img 
+      src="../images/logociclismo.png" 
+      alt="logo de ciclismo"
+      class="logo">
+    </div>
+      <!-- menu mobile -->
+      <input type="checkbox" id="check--menu">
+      <ul class="navegacion--nav">
+        <li class="nav--item active">
+          <a href="../index.html">
+            Inicio
+          </a>
+        </li>
+        <li class="nav--item">
+          <a href="./monuments.html">
+            Monumentos
+          </a>
+        </li>
+        <li class="nav--item">
+          <a href="./grandtours.html">
+            Grandes vueltas
+          </a>
+        </li>
+        <li class="nav--item">
+          <a href="./teams.html">
+            Equipos
+          </a>
+        </li>
+        <li class="nav--item">
+          <a href="./contacto.html">
+            Contacto
+          </a>
+        </li>
+      </ul>
+      <label for="check--menu">
+        <i><img src="../images/menu-regular-48.png" alt=""></i>
+      </label>
+  </nav>
+  </header>
+  <section class="fondo"></section>
+  <main class="formulario">
+
+    <form>
+
+      <h2>Contacto</h2>
+      
+      <div class="input-group">
+
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="Nombre">
+        <label for="text">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+        <label for="text">Mail</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <label for="message">Comentario</label>
+        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        <div class="form-txt">
+          <a href="#">Politica de privacidad</a>
+          <a href="#">Terminos y condiciones</a>
+        </div>
+        <input class="btn" type="submit" value="Enviar">
+      </div>
+    </form>
+  </main>
+  <hr class="linea">
+  <footer class="pie-de-pagina">
+    <section class="pdp">
+      <nav class="nav-bar-1">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./monuments.html">Monumentos</a></li>
+          <li><a href="./grandtours.html">Grandes vueltas</a></li>
+          <li><a href="./teams.html">Equipos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="texto-pdp">
+      <div>
+        <p>pagina sin fines de lucro</p>
+      </div>
+      <div>
+        <p>Pagina creada por Estanislao Genoud</p>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>

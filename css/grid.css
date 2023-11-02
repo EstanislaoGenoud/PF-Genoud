@@ -1,0 +1,75 @@
+.grilla-equipos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.seccion-equipos {
+    display: grid; 
+    position: relative;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 60px repeat(6, 1fr) 80px repeat(5, 1fr); 
+    gap: 20px; 
+    grid-template-areas: 
+    "WT WT WT"
+    "tjv uad tfs"
+    "tbv soq mov"
+    "jay igd icw"
+    "gfc efe dsm"
+    "cof boh ast"
+    "ark adc act"
+    "CP CP CP"
+    "bbh cjr cor"
+    "ekp eok eus"
+    "gbf hpm ipt"
+    "ltd q36 ten"
+    "tfb tnn uno"; 
+    
+}
+
+
+
+.wt { grid-area: WT; }
+.tjv { grid-area: tjv; }
+.uad { grid-area: uad; }
+.tfs { grid-area: tfs; }
+.tbv { grid-area: tbv; }
+.soq { grid-area: soq; }
+.mov { grid-area: mov; }
+.jay { grid-area: jay; }
+.igd { grid-area: igd; }
+.icw { grid-area: icw; }
+.gfc { grid-area: gfc; }
+.efe { grid-area: efe; }
+.dsm { grid-area: dsm; }
+.cof { grid-area: cof; }
+.boh { grid-area: boh; }
+.ast { grid-area: ast; }
+.ark { grid-area: ark; }
+.adc { grid-area: adc; }
+.act { grid-area: act; }
+.cp { grid-area: CP; }
+.bbh { grid-area: bbh; }
+.cjr { grid-area: cjr; }
+.cor { grid-area: cor; }
+.ekp { grid-area: ekp; }
+.eok { grid-area: eok; }
+.eus { grid-area: eus; }
+.gbf { grid-area: gbf; }
+.hpm { grid-area: hpm; }
+.ipt { grid-area: ipt; }
+.ltd { grid-area: ltd; }
+.q36 { grid-area: q36; }
+.ten { grid-area: ten; }
+.tfb { grid-area: tfb; }
+.tnn { grid-area: tnn; }
+.uno { grid-area: uno; }
+
+.tjv, .uad, .tfs, .tbv, .soq, .mov, .jay, .igd, .icw, .gfc, .efe, .dsm, .cof, .boh, .ast, .ark, .adc, .act, .bbh, .cjr, .cor, .ekp, .eok, .eus, .gbf, .hpm, .ipt, .ltd, .q36, .ten, .tfb, .tnn, .uno {
+    border: 1px solid black;
+
+} 
