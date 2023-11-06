@@ -313,17 +313,17 @@ cursor: pointer;
     
 }
 
-.nav-bar-1 ul li {
+.nav-bar-uno ul li {
     position: relative;
     float: left;
 }
 
-.nav-bar-1 {
+.nav-bar-uno {
     position: relative;
     float: left;
 }
 
-.nav-bar-1 ul li a {
+.nav-bar-uno ul li a {
     color: black;
     font-size: 18px;
     padding: 20px;
