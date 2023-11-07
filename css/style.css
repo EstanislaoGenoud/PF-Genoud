@@ -297,12 +297,9 @@ input::placeholder, textarea::placeholder {
 }
 
 .btn {
-    font-size: 16px;
-border: 0;
-border-radius: 25px;
-box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
-cursor: pointer;
+    background-color: green; 
 }
+
     /* fin de contacto */
     /* footer */
 .pdp {
