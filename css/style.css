@@ -308,6 +308,9 @@ input::placeholder, textarea::placeholder {
 .logo--footer {
     width: 75px;
 }
+.pdp {
+
+}
 
 .texto-pdp {
     display: flex;
