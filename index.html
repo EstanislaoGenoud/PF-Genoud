@@ -104,18 +104,41 @@
   <hr>
     <!-- footer -->
   <footer class="pie-de-pagina">
-    
-    <section class="pdp">
-      <nav class="nav-bar-uno">
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/monuments.html">Monumentos</a></li>
-          <li><a href="./pages/grandtours.html">Grandes vueltas<a><li>
-          <li><a href="./pages/teams.html" >Equipos</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </section>
+      <!-- barra navegacion footer -->
+      <div class="container-fluid centrado-personal">
+        <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img 
+              src="./images/logociclismo.png" 
+              alt="logo de ciclismo"
+              class="logo--footer"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="MenuNavegacion" class="collapse navbar-collapse">
+              <ul class="navbar-nav ms-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./pages/monuments.html">Monumentos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./pages/grandtours.html">Grandes Vueltas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./pages/teams.html">Equipos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </nav>
+    </div>
+
+
     <section class="texto-pdp">
       <div>
         <p>pagina sin fines de lucro</p>
@@ -124,6 +147,12 @@
         <p>Pagina creada por Estanislao Genoud</p>
       </div>
     </section>
+
+  
+
   </footer>
+
+  <script src="./js/bootstrap.js"></script>
+  
 </body>
 </html>

@@ -248,6 +248,7 @@ nav.navegacion {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 form {
@@ -256,12 +257,14 @@ form {
     border-radius: 20px;
     text-align: center;
     width: 700px;
+
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
     text-align: left;
+
 }
 
 label {
@@ -269,6 +272,7 @@ label {
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
+
 }
 
 input, textarea {
@@ -277,6 +281,7 @@ input, textarea {
     margin-bottom: 20px;
     border: 2px solid black;
     outline: none;
+
 }
 
 input::placeholder, textarea::placeholder {
@@ -288,6 +293,7 @@ input::placeholder, textarea::placeholder {
     display: flex;
     justify-content: space-between;
     text-align: center;
+
 }
 
 .form-txt a {
@@ -297,37 +303,10 @@ input::placeholder, textarea::placeholder {
 }
 
 .btn {
-    background-color: green; 
-}
-
-    /* fin de contacto */
-    /* footer */
-.pdp {
-    display: flex;
-    justify-content: center;
-    top: 0;
-    z-index: 10;
+    background-color: green; }
     
-}
-
-.nav-bar-uno ul li {
-    position: relative;
-    float: left;
-}
-
-.nav-bar-uno {
-    position: relative;
-    float: left;
-}
-
-.nav-bar-uno ul li a {
-    color: black;
-    font-size: 18px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    font-weight: bold;
-    
+.logo--footer {
+    width: 75px;
 }
 
 .texto-pdp {
@@ -335,14 +314,13 @@ input::placeholder, textarea::placeholder {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-content: center;
-    color: rgba(0, 0, 0, 0.342);
-    
-}
+    color: rgba(0, 0, 0, 0.342);}
 .texto-pdp div {
     width: 150px;
     margin: 10px;
     text-align: center;
     font-size: 15px;
+
 }
 
     /* fin del footer  */
@@ -912,5 +890,6 @@ input::placeholder, textarea::placeholder {
         position: relative;
         left: 5px;
     }
+
     /* footer */
 }
