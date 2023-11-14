@@ -588,7 +588,7 @@ input::placeholder, textarea::placeholder {
 
     .nav-bar-1 {
         position: relative;
-        float
+        
     }
 
     .nav-bar-1 ul li a {
@@ -912,5 +912,5 @@ input::placeholder, textarea::placeholder {
         position: relative;
         left: 5px;
     }
-
+    /* footer */
 }
