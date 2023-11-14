@@ -308,8 +308,11 @@ input::placeholder, textarea::placeholder {
 .logo--footer {
     width: 75px;
 }
-.pdp {
-
+footer .pdp {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 10; 
 }
 
 .texto-pdp {
