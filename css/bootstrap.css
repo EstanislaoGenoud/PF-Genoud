@@ -3959,7 +3959,7 @@ textarea.form-control-lg {
   }
   .navbar-expand-md .navbar-collapse {
     display: flex !important;
-    flex-basis: auto;
+    justify-content: center;
   }
   .navbar-expand-md .navbar-toggler {
     display: none;

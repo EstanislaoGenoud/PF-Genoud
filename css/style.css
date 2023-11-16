@@ -1,84 +1,334 @@
-    /* reset */
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Times", serif;
 }
 
 body {
-    font-family: 'Onest', sans-serif;
-    font-family: 'Quicksand', sans-serif;
+  font-family: "Onest", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-    /* barra de navegacion */
-
-nav.navegacion {
-    width: 100%;
-    height: 20%;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navegacion {
+  width: 100%;
+  height: 20%;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .navegacion .logo--container {
-    display: flex;
-    width: 10%;
-    align-items: center;
-    justify-content: space-around;
-    
+  display: flex;
+  width: 10%;
+  align-items: center;
+  justify-content: space-around;
 }
-.logo--container .logo {
-    width: 90px;
+.navegacion .logo--container .logo {
+  width: 90px;
+  border-radius: 50%;
+  margin-right: 8px;
+  box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
 }
-.navegacion--nav {
-    display: flex;
-    list-style: none;
-    width: 50%;
-    align-items: center;
-    justify-content: space-around;
-
+.navegacion .navegacion--nav {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
 }
-.navegacion--nav .nav--item {
-    padding: 10px;
-
+.navegacion .navegacion--nav .nav--item {
+  width: auto;
+  padding: 10px;
+  font-size: 0.8rem;
 }
-.nav--item {
-    font-size: 1.5rem;
+.navegacion .navegacion--nav .nav--item a {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+}
+.navegacion .navegacion--nav .nav--item a:hover {
+  cursor: pointer;
 }
 
-.nav--item a {
-    color: black;
-    font-size: bold;
-}
-
-
-
-
-
-    /* menu mobile */
 #check--menu, .navegacion label {
-    display: none;
+  display: none;
 }
-
-/* fondos  */
 
 .fondo {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.fondo-monumentos {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.fondo-gt {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.titulos-index {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.titulos-index .categoria {
+  height: 100%;
+}
+
+#categoria {
+  display: flex;
+  height: 300px;
+  flex-flow: column wrap;
+  gap: 10px;
+  justify-content: center;
+}
+#categoria .continental, #categoria .continental-profesional, #categoria .world-teams {
+  text-align: center;
+}
+
+.peloton {
+  width: 100%;
+}
+.peloton img {
+  width: 100%;
+  height: 40%;
+}
+
+iframe {
+  width: 450px;
+  height: 300px;
+}
+
+.titulo-m {
+  text-align: center;
+  margin: 20px;
+}
+
+.monumentos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: initial;
+  justify-content: space-around;
+  gap: 40px;
+}
+.monumentos .monumentos-2 {
+  margin: -324px 1px 150px 900px;
+}
+.monumentos .box-1, .monumentos .box-2, .monumentos .box-3, .monumentos .box-4, .monumentos .box-5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 150px;
+  padding: 5px;
+  border-left: 1px solid;
+}
+
+.titulo-gt {
+  text-align: center;
+}
+
+.grandes-vueltas {
+  width: 100%;
+  position: relative;
+}
+.grandes-vueltas .giro-de-italia {
+  display: flex;
+  width: 97%;
+  margin-left: 15px;
+  overflow-x: scroll;
+  gap: 1.4rem;
+  scrollbar-width: none;
+}
+.grandes-vueltas .tour-de-francia {
+  display: flex;
+  width: 97%;
+  margin-left: 15px;
+  overflow-x: 15px;
+  gap: 1.4rem;
+  scrollbar-width: none;
+}
+.grandes-vueltas .vuelta-españa {
+  display: flex;
+  width: 97%;
+  margin-left: 15px;
+  overflow-x: scroll;
+  gap: 1.4rem;
+  scrollbar-width: none;
+}
+
+.titulo-equipos {
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+}
+
+.col {
+  border: 1px solid black;
+}
+.col .trek {
+  width: 310px;
+}
+
+.formulario {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formulario form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 700px;
+}
+.formulario .input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.formulario label {
+  color: black;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.formulario input, .formulario textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  outline: none;
+}
+.formulario .form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.formulario .form-txt a {
+  color: #76B28E;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.formulario .btn {
+  background-color: green;
+}
+
+.pie-de-pagina {
+  width: 100%;
+}
+.pie-de-pagina .pdp {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  z-index: 10;
+  align-content: center;
+  position: relative;
+  text-align: center;
+}
+.pie-de-pagina .logo--footer {
+  width: 75px;
+}
+.pie-de-pagina .texto-pdp {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  color: rgba(0, 0, 0, 0.342);
+}
+.pie-de-pagina .texto-pdp .sfl {
+  position: relative;
+  text-align: center;
+}
+
+@media (max-width: 1240px) {
+  .navegacion--nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: initial;
+    align-content: initial;
+    position: relative;
+    right: 260px;
+  }
+  .navegacion--nav .logo--container .logo {
+    width: 60%;
+  }
+  .navegacion--nav .nav--item {
+    width: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+  .navegacion--nav .nav--item a {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+  }
+  .navegacion--nav .nav--item a:hover {
+    cursor: pointer;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 52px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .fondo {
     width: 100%;
     height: 70vh;
-    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
+    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     display: inline-block;
     text-align: center;
-}
-
-.fondo-monumentos {
+  }
+  .fondo-monumentos {
     width: 100%;
     height: 70vh;
     background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
@@ -88,814 +338,457 @@ nav.navegacion {
     position: relative;
     display: inline-block;
     text-align: center;
-}
-
-.fondo-gt {
+  }
+  .fondo-gt {
     width: 100%;
     height: 70vh;
-    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
+    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     display: inline-block;
     text-align: center;
+  }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap');
-
-    /* index */
-.titulos-index {
+@media (max-width: 920px) {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion .navegacion--nav {
+    display: none;
+  }
+  .navegacion--nav .nav-item {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 5px;
+    position: relative;
+    right: 35px;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
     width: 100%;
-    display: flex;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 75px;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    gap: 20px;
-}
-
-
-
-#categoria {
-    display: flex;
-    height: 300px;
-    flex-flow: column wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-
-.continental, .continental-profesional, .world-teams {
+    justify-content: start;
+    align-items: start;
+  }
+  .logo--container .logo {
+    width: 60%;
+  }
+  .fondo {
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: inline-block;
     text-align: center;
+  }
+  .fondo-monumentos {
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .fondo-gt {
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  #categoria {
+    display: flex;
+    flex-flow: row wrap;
+    height: 350px;
+    font-size: 0.75rem;
+    justify-content: space-between;
+  }
+  #categoria .continental {
+    position: relative;
+    right: 25px;
+  }
+  #categoria .continental-profesional {
+    position: relative;
+    right: 25px;
+  }
+  #categoria .world-teams {
+    position: relative;
+    right: 25px;
+  }
+  .titulo-gt {
+    position: relative;
+    left: 20px;
+  }
+  .grandes-vueltas iframe {
+    width: 240px;
+    height: 200px;
+  }
 }
-
-.continental-profesional {
+@media (max-width: 820px) {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion .navegacion--nav {
+    display: none;
+  }
+  .navegacion--nav .nav-item {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 5px;
+    position: relative;
+    right: 35px;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 75px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .logo--container .logo {
+    width: 60%;
+  }
+  .fondo {
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .fondo-monumentos {
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .fondo-gt {
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  #categoria {
+    display: flex;
+    flex-flow: row wrap;
+    height: 350px;
+    font-size: 0.75rem;
+    justify-content: space-between;
+  }
+  #categoria .continental {
+    position: relative;
+    right: 25px;
+  }
+  #categoria .continental-profesional {
+    position: relative;
+    right: 25px;
+  }
+  #categoria .world-teams {
+    position: relative;
+    right: 25px;
+  }
+  .titulo-gt {
+    position: relative;
+    left: 20px;
+  }
+  .grandes-vueltas iframe {
+    width: 240px;
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion .navegacion--nav {
+    display: none;
+  }
+  .navegacion--nav .nav-item {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 5px;
+    position: relative;
+    right: 35px;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 75px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .logo--container .logo {
+    width: 60%;
+  }
+  #categoria {
+    display: flex;
+    flex-flow: row wrap;
+    height: 350px;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+  #categoria .continental {
+    position: relative;
+    right: 20px;
+  }
+  #categoria .continental-profesional {
+    position: relative;
+    right: 25px;
+  }
+  .titulo-gt {
+    position: relative;
+    left: 20px;
+  }
+  .grandes-vueltas iframe {
+    width: 240px;
+    height: 200px;
+  }
+}
+@media (max-width: 440px) {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion .navegacion--nav {
+    display: none;
+  }
+  .navegacion--nav .nav-item {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 4px;
+    position: relative;
+    right: 35px;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 75px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .logo--container .logo {
+    width: 100%;
+  }
+  h2, h3 {
+    font-size: 1rem;
+  }
+  #categoria {
+    display: flex;
+    flex-flow: row wrap;
+    height: 450px;
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+  #categoria .continental {
+    position: relative;
+    left: 80px;
+    font-size: 0.7rem;
+  }
+  #categoria .continental-profesional {
+    position: relative;
+    left: 110px;
+    font-size: 0.7rem;
+    bottom: 75px;
+  }
+  #categoria .world-teams {
+    position: relative;
+    top: 65px;
+    right: 175px;
+    font-size: 0.7rem;
+  }
+  .monumetos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: initial;
+    justify-content: space-around;
+  }
+  .monumetos iframe {
+    width: 350px;
+    height: 300px;
+  }
+  .monumetos .box-1, .monumetos .box-2, .monumetos .box-3, .monumetos .box-4, .monumetos .box-5 {
+    border: 0;
+  }
+  .monumetos div ul {
+    font-size: 0.7rem;
     position: relative;
     right: 70px;
+  }
+  .titulo-gt {
+    font-size: 1.3rem;
+    position: relative;
+    left: 5px;
+  }
+  .grandes-vueltas iframe {
+    width: 350px;
+    height: 300px;
+  }
 }
-
-
-
-.peloton {
-    width: 100%;
-    height: 70%;
-}
-.peloton img {
-    width: 100%;
-    height: 10%;
-}
-
-    /* fin de index */
-
-    /* iframe */
-    iframe {
-        width: 450px;
-        height: 300px;
-    }
-
-    /* monumentos */
-
-
-.monumentos-2 {
-    margin: -324px 1px 150px 900px;
-}
-
-.titulo-m {
-    text-align: center;
-    margin: 20px;
-}
-.monumentos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100%;
-    align-content: initial;
-    justify-content: space-around;
-    gap: 40px;
-}
-
-.box-1, .box-2, .box-3, .box-4, .box-5 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 150px;
-    padding: 5px;
-    border-left: 1px solid;
-}
-    /* fin de monumentos */
-    /* grandes vueltas */
-.titulo-gt {
-    text-align: center;
-}
-
-.grandes-vueltas {
-    width: 100%;
-    position: relative;    
-}
-
-
-.giro-de-italia {
-    display: flex;
-    width: 97%;
-    margin-left: 15px;
-    overflow-x: scroll;
-    gap: 1.4rem;
-    scrollbar-width: none;
-}
-
-.tour-de-francia {
-    display: flex;
-    width: 97%;
-    margin-left: 15px;
-    overflow-x: scroll;
-    gap: 1.4rem;
-    scrollbar-width: none;
-}
-
-.vuelta-españa {
-    display: flex;
-    width: 97%;
-    margin-left: 15px;
-    overflow-x: scroll;
-    gap: 1.4rem;
-    scrollbar-width: none;
-}
-
-    /* fin de grandes vueltas */
-
-    /* Equipos */
-/* main-equipos */
-.titulo-equipos {
-    display: flex;
-    justify-content: center;
-    border: 1px solid white;
-}
-
-
-.col {
-    border: 1px solid black;
-}
-
-
-
-.trek {
-    width: 310px;
-}
-    /* fin de equipos */
-
-    /* contacto */
-
-.formulario {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-form {
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 700px;
-
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-
-}
-
-label {
-    color: black;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-
-}
-
-input, textarea {
-    padding: 17px 25px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    border: 2px solid black;
-    outline: none;
-
-}
-
-input::placeholder, textarea::placeholder {
-    color: hwb(138 1% 0%);
-}
-
-.form-txt {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-
-}
-
-.form-txt a {
-    color: #76B28E;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.btn {
-    background-color: green; }
-    
-.logo--footer {
-    width: 75px;
-}
-footer .pdp {
-    display: flex;
-    justify-content: center;
-    top: 0;
-    z-index: 10; 
-}
-
-.texto-pdp {
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    align-content: center;
-    color: rgba(0, 0, 0, 0.342);}
-.texto-pdp div {
-    width: 150px;
-    margin: 10px;
-    text-align: center;
-    font-size: 15px;
-
-}
-
-    /* fin del footer  */
-
-
-    /* media queries */
-
-
-@media (max-width: 1240px) {
-
-    .navegacion--nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: initial;
-        align-items: initial;
-        align-content: initial;
-        position: relative;
-        right: 260px;
-    }
-
-
-    #check--menu:checked~.navegacion--nav {
-        display: flex;
-        background-color: #76b28e7d;
-        width: 100%;
-        height: 40vh;
-        position: absolute;
-        left: 0;
-        z-index: 10;
-        top: 52px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
-    .logo--container .logo {
-        width: 60%;
-    }
-
-    .fondo {
-        width: 100%;
-        height: 70vh;
-        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    .fondo-gt {
-        width: 100%;
-        height: 90vh;
-        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    .grandes-vueltas iframe {
-        width: 390px;
-        height: 300px;
-    }
-
-}
-
-@media (max-width: 820px) {
-    .navegacion label {
-        display: block;
-    }
-    .navegacion--nav {
-        display: none;
-    }
-
-
-    #check--menu:checked~.navegacion--nav {
-        display: flex;
-        background-color: #76b28e7d;
-        width: 100%;
-        height: 30vh;
-        position: absolute;
-        left: 0;
-        z-index: 10;
-        top: 63px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
-    .logo--container .logo {
-        width: 60%;
-    }
-
-    .fondo {
-        width: 100%;
-        height: 30vh;
-        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    .navegacion--nav .nav--item {
-        display: flex;
-        font-size: 1.2rem;
-        padding: 5px;
-        position: relative;
-        right: 35px;
-    }
-    #categoria {
-        display: flex;
-        flex-flow: row wrap;
-        height: 350px;
-        font-size: 1rem;
-        justify-content: space-between;
-    }
-
-    .continental {
-        position: relative;
-        right: 20px;
-    }
-
-    .continental-profesional {
-        position: relative;
-        right: 25px;
-    }
-
-    .world-teams {
-        position: relative;
-        left: 295px;
-    }
-        /* monumentos */
-
-        .fondo-monumentos {
-            width: 100%;
-            height: 50vh;
-            background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            display: inline-block;
-            text-align: center;
-        }
-        .fondo-gt {
-            width: 100%;
-            height: 50vh;
-            background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            display: inline-block;
-            text-align: center;
-        }
-        .titulo-gt {
-            position: relative;
-
-        }
-        .grandes-vueltas iframe {
-            width: 250px;
-            height: 200px;
-        }
-}
-
-@media (max-width: 768px) {
-    .navegacion label {
-        display: block;
-    }
-    .navegacion--nav {
-        display: none;
-    }
-
-
-    #check--menu:checked~.navegacion--nav {
-        display: flex;
-        background-color: #76b28e7d;
-        width: 100%;
-        height: 30vh;
-        position: absolute;
-        left: 0;
-        z-index: 10;
-        top: 63px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
-    .logo--container .logo {
-        width: 60%;
-    }
-
-    .fondo {
-        width: 100%;
-        height: 30vh;
-        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    h3 {
-        font-size: 1.3rem;
-    }
-
-
-    .navegacion--nav .nav--item {
-        display: flex;
-        font-size: 1.2rem;
-        padding: 5px;
-        position: relative;
-        right: 35px;
-    }
-
-
-
-    #categoria {
-        display: flex;
-        flex-flow: row wrap;
-        height: 350px;
-        font-size: 12px;
-        justify-content: space-between;
-    }
-
-    .continental {
-        position: relative;
-        right: 20px;
-    }
-
-    .continental-profesional {
-        position: relative;
-        right: 25px;
-    }
-
-    .world-teams {
-        position: absolute;
-        
-    }
-
-    .nav-bar-1 {
-        position: relative;
-        
-    }
-
-    .nav-bar-1 ul li a {
-        font-size: 0.8rem;        
-    }
-
-    /* grandes vueltas */
-    .titulo-gt {
-        position: relative;
-        left: 20px;
-    }
-    .grandes-vueltas iframe {
-        width: 240px;
-        height: 200px;
-    }
-        /* monumentos */
-
-        .fondo-monumentos {
-            width: 100%;
-            height: 20vh;
-            background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            display: inline-block;
-            text-align: center;
-        }
-        .fondo-gt {
-            width: 100%;
-            height: 30vh;
-            background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            display: inline-block;
-            text-align: center;
-        }
-}
-
-@media (max-width: 440px) {
-    .navegacion label {
-        display: block;
-    }
-    .navegacion--nav {
-        display: none;
-    }
-
-
-    #check--menu:checked~.navegacion--nav {
-        display: flex;
-        background-color: #76b28e7d;
-        width: 100%;
-        height: 20vh;
-        position: absolute;
-        left: 0;
-        z-index: 10;
-        top: 62px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
-    .logo--container .logo {
-        width: 100%;
-    }
-    /* fondo index y contacto */
-    .fondo {
-        width: 100%;
-        height: 20vh;
-        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-
-    h2,h3 {
-        font-size: 1rem;
-    }
-    /* contacto*/
-    .formulario {
-        top: 500px;
-    }
-
-
-
-    .navegacion--nav .nav--item {
-        display: flex;
-        font-size: 0.8rem;
-        padding: 4px;
-        position: relative;
-        right: 35px;
-    }
-
-    /* index */
-    #categoria {
-        display: flex;
-        flex-flow: column wrap;
-        height: 500px;
-        font-size: 10px;
-    }
-
-    .continental {
-        position: relative;
-        right: 15px;
-    }
-
-    .continental-profesional {
-        position: relative;
-        right: 15px;
-        
-    }
-
-    .world-teams {
-        position: relative;
-        left: -10px;
-        bottom: 15px;
-    }
-        /* monumentos */
-
-        .fondo-monumentos {
-            width: 100%;
-            height: 20vh;
-            background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            display: inline-block;
-            text-align: center;
-        }
-    
-        .monumentos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 100%;
-        align-content: initial;
-        justify-content: space-around;
-        }
-    
-        .monumentos iframe {
-            width: 350px;
-            height: 300px;
-        }
-        .box-1, .box-2, .box-3, .box-4, .box-5 {
-            border: 0;
-        }
-        .monumentos div ul {
-            font-size: 0.7rem;
-            position: relative;
-            right: 70px;
-        }
-        /* fin de monumentos */
-        /* grandes vueltas */
-        .fondo-gt {
-            width: 100%;
-            height: 30vh;
-            background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            display: inline-block;
-            text-align: center;
-        }
-        .grandes-vueltas iframe {
-            width: 350px;
-            height: 300px;
-        }
-        .titulo-gt {
-            font-size: 1.3rem;
-            position: relative;
-            left: 5px;
-        }
-    
-}
-
-
-
-
-
-
 @media (max-width: 375px) {
-    .navegacion label {
-        display: block;
-    }
-    .navegacion--nav {
-        display: none;
-    }
-
-
-    #check--menu:checked~.navegacion--nav {
-        display: flex;
-        background-color: #76b28e7d;
-        width: 100%;
-        height: 20vh;
-        position: absolute;
-        left: 0;
-        z-index: 10;
-        top: 62px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
-    .logo--container .logo {
-        width: 100%;
-    }
-    /* fondo index y contacto */
-    .fondo {
-        width: 100%;
-        height: 20vh;
-        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-
-    h2,h3 {
-        font-size: 1rem;
-    }
-    /* contacto*/
-    .formulario {
-        top: 500px;
-    }
-
-
-
-    .navegacion--nav .nav--item {
-        display: flex;
-        font-size: 0.8rem;
-        padding: 4px;
-        position: relative;
-        right: 35px;
-    }
-    /* index */
-    #categoria {
-        display: flex;
-        flex-flow: column wrap;
-        height: 500px;
-        font-size: 10px;
-    }
-
-    .continental {
-        position: relative;
-        right: 15px;
-    }
-
-    .continental-profesional {
-        position: relative;
-        right: 15px;
-        
-    }
-
-    .world-teams {
-        position: relative;
-        left: -10px;
-        bottom: 15px;
-    }
-    /* fin index */
-    
-    /* monumentos */
-
-    .fondo-monumentos {
-        width: 100%;
-        height: 20vh;
-        background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-
-    .monumentos {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion .navegacion--nav {
+    display: none;
+  }
+  .navegacion .navegacion--nav .nav-item {
+    font-size: 0.8rem;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 75px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .logo--container .logo {
+    width: 40%;
+  }
+  .fondo {
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .fondo-monumentos {
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .fondo-gt {
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  h2, h3 {
+    font-size: 1rem;
+  }
+  #categoria {
+    display: flex;
+    flex-flow: row wrap;
+    height: 450px;
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+  #categoria .continental {
+    position: relative;
+    left: 50px;
+    font-size: 0.7rem;
+  }
+  #categoria .continental-profesional {
+    position: relative;
+    left: 75px;
+    font-size: 0.7rem;
+    bottom: 75px;
+  }
+  #categoria .world-teams {
+    position: relative;
+    top: 65px;
+    right: 145px;
+    font-size: 0.7rem;
+  }
+  .monumentos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 100%;
     align-content: initial;
     justify-content: space-around;
-    }
-
-    .monumentos iframe {
-        width: 350px;
-        height: 300px;
-    }
-    .box-1, .box-2, .box-3, .box-4, .box-5 {
-        border: 0;
-    }
-    .monumentos div ul {
-        font-size: 0.7rem;
-        position: relative;
-        right: 70px;
-    }
-    /* fin de monumentos */
-    /* grandes vueltas */
-    .fondo-gt {
-        width: 100%;
-        height: 30vh;
-        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    .grandes-vueltas iframe {
-        width: 350px;
-        height: 300px;
-    }
-    .titulo-gt {
-        font-size: 1.3rem;
-        position: relative;
-        left: 5px;
-    }
-
-    /* footer */
+  }
+  .monumentos iframe {
+    width: 350px;
+    height: 300px;
+  }
+  .monumentos .box-1, .monumentos .box-2, .monumentos .box-3, .monumentos .box-4, .monumentos .box-5 {
+    border: 0;
+  }
+  .monumentos div ul {
+    font-size: 0.7rem;
+    position: relative;
+    right: 70px;
+  }
+  .titulo-gt {
+    font-size: 1.3rem;
+    position: relative;
+    left: 5px;
+  }
+  .grandes-vueltas iframe {
+    width: 350px;
+    height: 300px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
