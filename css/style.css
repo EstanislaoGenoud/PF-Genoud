@@ -57,7 +57,8 @@ body {
   cursor: pointer;
 }
 
-#check--menu, .navegacion label {
+#check--menu,
+.navegacion label {
   display: none;
 }
 
