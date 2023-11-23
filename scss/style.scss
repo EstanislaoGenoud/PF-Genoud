@@ -31,14 +31,14 @@ body {
     .navegacion--nav {
         display: flex;
         list-style: none;
-        width: $ancho/2;
+        width: $ancho /2;
         align-items: center;
         justify-content: space-around;
 
         .nav--item {
             width: auto;
             padding: 10px;
-            font-size: .8rem;
+            font-size: 0.9rem;
 
             a {
                 color: black;
