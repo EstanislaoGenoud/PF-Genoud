@@ -1,0 +1,14 @@
+// equipos
+.titulo-equipos {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+}
+.col {
+    border: 1px solid black;
+
+    .trek {
+        width: 310px;
+    }
+}
+// fin de equipos

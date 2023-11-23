@@ -1,0 +1,48 @@
+// contacto
+.formulario {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        padding: 50px 55px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 700px;
+    }
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    label {
+        color: black;
+        font-size: .9375rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    input, textarea {
+        padding: 17px 25px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        outline: none;
+    }
+    .form-txt {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .form-txt a {
+        color: #76B28E;
+        font-size: .875rem;
+        font-weight: 600;
+    }
+    .btn {
+        background-color: green;
+    }
+}
+// fin de contacto

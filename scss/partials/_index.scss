@@ -1,0 +1,39 @@
+// index
+.titulos-index {
+    width: $ancho;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+
+    .categoria {
+        height: $alto;
+    }
+}
+#categoria {
+    display: flex;
+    height: 300px;
+    flex-flow: column wrap;
+    gap: 10px;
+    justify-content: center;
+
+    .continental, .continental-profesional, .world-teams {
+        text-align: center;
+    }
+}
+.peloton {
+    width: $ancho;
+
+    img {
+        width: $ancho;
+        height: 40%;
+    }
+}
+.colum {
+    img {
+        width: 750px;
+    }
+}
+
+// fin de index

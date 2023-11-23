@@ -1,0 +1,26 @@
+// monumentos
+.titulo-m {
+    text-align: center;
+    margin: 20px;
+}
+.monumentos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: initial;
+    justify-content: space-around;
+    gap: 40px;
+
+    .monumentos-2 {
+        margin: -324px 1px 150px 900px;
+    }
+
+    .box-1, .box-2, .box-3, .box-4, .box-5 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 150px;
+        padding: 5px;
+        border-left: 1px solid;
+    }
+}
+// fin de monumentos

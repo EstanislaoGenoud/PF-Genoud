@@ -1,9 +1,18 @@
+@use "sass:math";
 @import "./partials/variables";
 @import "./partials/reset";
+@import "./partials/maps";
+
+
 body {
     font-family: 'Onest', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
+@import "./partials/barranav";
+@import "./partials/index";
+
+
+
 
 // barra de navegacion
 .navegacion {
@@ -60,7 +69,7 @@ body {
 }
 // fin de barra de navegacion
 
-    // fondos
+// fondos
 .fondo {
     width: $ancho;
     height: 70vh;
@@ -94,41 +103,6 @@ body {
     text-align: center;
 }
 // fin de fondos
-
-// index
-.titulos-index {
-    width: $ancho;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    gap: 20px;
-
-    .categoria {
-        height: $alto;
-    }
-}
-#categoria {
-    display: flex;
-    height: 300px;
-    flex-flow: column wrap;
-    gap: 10px;
-    justify-content: center;
-
-    .continental, .continental-profesional, .world-teams {
-        text-align: center;
-    }
-}
-.peloton {
-    width: $ancho;
-
-    img {
-        width: $ancho;
-        height: 40%;
-    }
-}
-// fin de index
-
 // iframe
 iframe {
     width: 450px;
@@ -136,132 +110,10 @@ iframe {
 }
 // fin de iframe
 
-// monumentos
-.titulo-m {
-    text-align: center;
-    margin: 20px;
-}
-.monumentos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: initial;
-    justify-content: space-around;
-    gap: 40px;
-
-    .monumentos-2 {
-        margin: -324px 1px 150px 900px;
-    }
-
-    .box-1, .box-2, .box-3, .box-4, .box-5 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 150px;
-        padding: 5px;
-        border-left: 1px solid;
-    }
-}
-// fin de monumentos
-
-// grandes vueltas
-.titulo-gt {
-    text-align: center;
-}
-.grandes-vueltas {
-    width: $ancho;
-    position: relative;
-
-    .giro-de-italia {
-        display: flex;
-        width: 97%;
-        margin-left: 15px;
-        overflow-x: scroll;
-        gap: 1.4rem;
-        scrollbar-width: none;
-    }
-    .tour-de-francia {
-        display: flex;
-        width: 97%;
-        margin-left: 15px;
-        overflow-x: 15px;
-        gap: 1.4rem;
-        scrollbar-width: none;
-    }
-    .vuelta-españa {
-        display: flex;
-        width: 97%;
-        margin-left: 15px;
-        overflow-x: scroll;
-        gap: 1.4rem;
-        scrollbar-width: none;
-    }
-}
-// fin de grandes vueltas
-
-// equipos
-.titulo-equipos {
-    display: flex;
-    justify-content: center;
-    border: 1px solid;
-}
-.col {
-    border: 1px solid black;
-
-    .trek {
-        width: 310px;
-    }
-}
-// fin de equipos
-
-// contacto
-.formulario {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    form {
-        padding: 50px 55px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        border-radius: 20px;
-        text-align: center;
-        width: 700px;
-    }
-    .input-group {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-    label {
-        color: black;
-        font-size: .9375rem;
-        font-weight: 600;
-        margin-bottom: 15px;
-    }
-    input, textarea {
-        padding: 17px 25px;
-        border-radius: 25px;
-        margin-bottom: 20px;
-        border: 2px solid black;
-        outline: none;
-    }
-    .form-txt {
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-    }
-    .form-txt a {
-        color: #76B28E;
-        font-size: .875rem;
-        font-weight: 600;
-    }
-    .btn {
-        background-color: green;
-    }
-}
-// fin de contacto
-
+@import "./partials/monumentos";
+@import "./partials/grandtours";
+@import "./partials/teams";
+@import "./partials/contacto";
 // footer
 .pie-de-pagina {
     width: $ancho;
@@ -293,4 +145,7 @@ iframe {
     }
 }
 
-@import "./partials/queries"
+
+
+@import "./partials/grillas";
+@import "./partials/queries";

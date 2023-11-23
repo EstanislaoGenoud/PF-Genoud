@@ -1,0 +1,59 @@
+// barra de navegacion
+.navegacion {
+    width: $ancho;
+    height: 20%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo--container {
+        display: flex;
+        width: 10%;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo {
+            width: 90px;
+            border-radius: 50%;
+            margin-right: 8px;
+            box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
+        }
+    }
+    .navegacion--nav {
+        display: flex;
+        list-style: none;
+        width: math.div($ancho, 2);
+        align-items: center;
+        justify-content: space-around;
+
+        .nav--item {
+            width: auto;
+            padding: 10px;
+            font-size: .8rem;
+            
+            &:hover {
+                background-color: yellow;
+                border-radius: 8px;
+            }
+            a {
+                color: black;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                text-decoration: none;
+                &:hover {
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+}
+// menu mobile
+#check--menu, 
+.navegacion label {
+    display: none;
+}
+// fin de barra de navegacion
