@@ -1,5 +1,7 @@
 @charset "UTF-8";
-* {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -126,6 +128,34 @@ body {
 .peloton img {
   width: 100%;
   height: 40%;
+}
+
+.contenedor--personal {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 100vh;
+  max-width: 1024px;
+}
+
+.rowper {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.border-test {
+  border: 1px solid yellow;
+}
+
+.colsper-ej {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid blue;
 }
 
 iframe {

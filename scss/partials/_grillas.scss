@@ -1,0 +1,33 @@
+@use "sass:math";
+@import "variables";
+
+.contenedor--personal {
+    width: $ancho;
+    padding-left: math.div($gap, 2);
+    padding-right: math.div($gap, 2);
+
+    // a modo visual
+    height: 100vh;
+    max-width: 1024px;
+}
+
+.rowper {
+    margin-top: math.div($gap, 2);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: math.div($gap, -2);
+    margin-right: math.div($gap, -2);
+}
+
+
+.border-test {
+    border: 1px solid yellow;
+}
+
+.colsper-ej {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid blue;
+}
