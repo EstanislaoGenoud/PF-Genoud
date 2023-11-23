@@ -10,7 +10,7 @@ body {
 }
 @import "./partials/barranav";
 @import "./partials/index";
-@import "./partials/grillas";
+
 
 
 
@@ -54,6 +54,11 @@ iframe {
     height: 300px;
 }
 // fin de iframe
+
+@import "./partials/monumentos";
+@import "./partials/grandtours";
+@import "./partials/teams";
+@import "./partials/contacto";
 // footer
 .pie-de-pagina {
     width: $ancho;
@@ -84,9 +89,8 @@ iframe {
         }
     }
 }
-@import "./partials/monumentos";
-@import "./partials/grandtours";
-@import "./partials/teams";
-@import "./partials/contacto";
 
-@import "./partials/queries"
+
+
+@import "./partials/grillas";
+@import "./partials/queries";

@@ -1,41 +1,41 @@
 @use "sass:math";
 @import "./variables";
 
-// .contenedor--personal {
-//     width: $ancho;
-//     margin: 0 auto;
-//     padding-left: math.div($gap, 2);
-//     padding-right: math.div($gap, 2);
+.contenedor--personal {
+    width: $ancho;
+    margin: 0 auto;
+    padding-left: math.div($gap, 2);
+    padding-right: math.div($gap, 2);
 
     
-//     height: 100vh;
-//     max-width: 1440px;
+    height: 70vh;
+    max-width: 1440px;
     
-// }
+}
 
-// .row-per {
-//     margin-top: math.div($gap, 2);
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-left: math.div($gap, -2);
-//     margin-right: math.div($gap, -2);
-// }
+.row-per {
+    margin-top: math.div($gap, 2);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: math.div($gap, -2);
+    margin-right: math.div($gap, -2);
+}
 
-// [class*="colum-"], .colum {
-//     width: $ancho;
-//     max-width: $ancho;
-//     padding-left: math.div($gap, 2);
-//     padding-right: math.div($gap, 2);
-// }
+[class*="colum-"], .colum {
+    width: $ancho;
+    max-width: $ancho;
+    padding-left: math.div($gap, 2);
+    padding-right: math.div($gap, 2);
+}
 
 
-// .border-test {
-//     border: 1px solid yellow;
-// }
+.border-test {
+    border: 1px solid yellow;
+}
 
-// .colum {
-//     flex: 1 0 0;
-// }
+.colum {
+    flex: 1 0 0;
+}
 
 // @for $colum from 1 through $colums {
 //     .colum-#{$colum} {
@@ -46,41 +46,48 @@
 // }
 
 
-// .colum-per {
-//     padding-top: 1rem;
-//     padding-bottom: 1rem;
-//     display: grid;
-//     place-items: center;
-//     border: 1px solid blue;
-// }
+.colum-per {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid blue;
+}
 
-// // mixin
-// @mixin grid-system($mq){
-//     .#{$mq} {
-//         flex: 1 0 0;
-//     }
-//     @for $colum from 1 through $colums {
-//         .#{$mq}-#{$colum} {
-//             flex: 0 0 (100% / $colums) * $colum;
-//             max-width: (100% / $colums) * $colum;
-//         }
+.colum-text {
+    text-align: center;
+}
+
+// mixin
+@mixin grid-system($mq){
+    .#{$mq} {
+        flex: 1 0 0;
+    }
+    @for $colum from 1 through $colums {
+        .#{$mq}-#{$colum} {
+            flex: 0 0 (100% / $colums) * $colum;
+            max-width: (100% / $colums) * $colum;
+        }
     
-//     }
-// }
+    }
+}
 
-// // creando breakpoint 
-// @media screen and (min-width: 576px) {
-//     @include grid-system(col-sm)
-// }
-// @media screen and (min-width: 768px) {
-//     @include grid-system(col-md)
-// }
-// @media screen and (min-width: 992px) {
-//     @include grid-system(col-lg)
-// }
-// @media screen and (min-width: 1200px) {
-//     @include grid-system(col-xl)
-// }
+// creando breakpoint 
+@media screen and (min-width: 390px) {
+    @include grid-system(colum-xs)
+}
+@media screen and (min-width: 576px) {
+    @include grid-system(colum-sm)
+}
+@media screen and (min-width: 768px) {
+    @include grid-system(colum-md)
+}
+@media screen and (min-width: 992px) {
+    @include grid-system(colum-lg)
+}
+@media screen and (min-width: 1200px) {
+    @include grid-system(colum-xl)
+}
 
 
-// @include grid-system(colum);
+@include grid-system(colum);

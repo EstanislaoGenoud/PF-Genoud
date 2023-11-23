@@ -172,6 +172,20 @@
             
         }
     }
+    .contenedor--personal {
+        .colum {
+            img {
+                width: 550px;
+            }
+        }
+        .colum-text {
+            width: $ancho;
+            height: 380px;
+            text-align: center;
+            overflow: scroll;
+            font-size: 0.8rem;
+        }
+    }
     // fin de index
 
     // grandes vueltas
@@ -279,6 +293,20 @@
             position: relative;
             right: 25px;
             
+        }
+    }
+    .contenedor--personal {
+        .colum {
+            img {
+                width: 500px;
+            }
+        }
+        .colum-text {
+            width: $ancho;
+            height: 380px;
+            text-align: center;
+            overflow: scroll;
+            font-size: 0.8rem;
         }
     }
     // fin de index
@@ -421,6 +449,20 @@
             font-size: .7rem;
         }
     }
+    .contenedor--personal {
+        .colum {
+            img {
+                width: 250px;
+            }
+        }
+        .colum-text {
+            width: $ancho;
+            height: 280px;
+            text-align: center;
+            overflow: scroll;
+            font-size: 0.75rem;
+        }
+    }
         // fin index
 
         // monumentos
@@ -520,6 +562,20 @@
             top: 65px;
             right: 145px;
             font-size: .7rem;
+        }
+    }
+    .contenedor--personal {
+        .colum {
+            img {
+                width: 250px;
+            }
+        }
+        .colum-text {
+            width: $ancho;
+            height: 250px;
+            text-align: center;
+            overflow: scroll;
+            font-size: 0.75rem;
         }
     }
         // fin index
@@ -655,6 +711,20 @@
                 top: 65px;
                 right: 145px;
                 font-size: .7rem;
+            }
+        }
+        .contenedor--personal {
+            .colum {
+                img {
+                    width: 230px;
+                }
+            }
+            .colum-text {
+                width: $ancho;
+                height: 250px;
+                text-align: center;
+                overflow: scroll;
+                font-size: 0.75rem;
             }
         }
         // fin index
