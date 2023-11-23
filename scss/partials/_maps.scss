@@ -1,0 +1,18 @@
+@import "./variables";
+
+$colores: (
+    primario: $primario,
+    secundario: $secundario,
+    peligro: $peligro,
+    oscuro: $oscuro,
+    amarillo: $amarillo
+);
+
+@each $i, $color in $colores {
+    .boton-#{$i}{
+        background-color: $color;
+        padding: $colums + 3px;
+        color: $oscuro;
+        border-radius: $colums - 4px;
+    }
+}

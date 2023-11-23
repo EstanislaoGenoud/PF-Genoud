@@ -32,7 +32,11 @@
             width: auto;
             padding: 10px;
             font-size: .8rem;
-
+            
+            &:hover {
+                background-color: yellow;
+                border-radius: 8px;
+            }
             a {
                 color: black;
                 display: flex;

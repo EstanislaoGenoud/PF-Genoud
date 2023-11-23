@@ -459,6 +459,107 @@
         }
         // fin de grandes vueltas
 }
+@media (max-width:390px) {
+    .navegacion label {
+        display: block;
+    }
+    .navegacion {
+        .navegacion--nav {
+            display: none;
+        }
+    }
+    .navegacion--nav .nav-item {
+        display: flex;
+        font-size: .7rem;
+        padding: 4px;
+        position: relative;
+        right: 35px;
+    }
+    #check--menu:checked~.navegacion--nav {
+        display: flex;
+        background-color: #76B28E7D;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        top: 75px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .logo--container {
+        .logo {
+            width: 100%;
+        }
+    }
+        // index
+    h2,h3 {
+        font-size: 1rem;
+        }
+    #categoria {
+        display: flex;
+        flex-flow: row wrap;
+        height: 450px;
+        font-size: 1rem;
+        justify-content: space-between;
+        
+        .continental {
+            position: relative;
+            left: 60px;
+            font-size: .7rem;
+            }
+        .continental-profesional {
+            position: relative;
+            left: 90px;
+            font-size: .7rem;
+            bottom: 75px;
+            }
+        .world-teams {
+            position: relative;
+            top: 65px;
+            right: 145px;
+            font-size: .7rem;
+        }
+    }
+        // fin index
+
+        // monumentos
+        .monumetos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: initial;
+            justify-content: space-around;
+
+            iframe {
+                width: 350px;
+                height: 300px;
+
+            }
+                .box-1, .box-2, .box-3, .box-4, .box-5 {
+                    border: 0;
+                }
+                div ul {
+                    font-size: .7rem;
+                    position: relative;
+                    right: 70px;
+                }
+        }
+        // fin de monumentos
+
+        // grandes vueltas
+        .titulo-gt {
+            font-size: 1.3rem;
+            position: relative;
+            left: 5px;
+        }
+        .grandes-vueltas iframe {
+            width: 350px;
+            height: 300px;
+        }
+        // fin de grandes vueltas
+}
 @media (max-width:375px) {
     .navegacion label {
         display: block;
@@ -539,7 +640,7 @@
     
             .continental {
                 position: relative;
-                // right: 15px;
+                right: 15px;
                 left: 50px;
                 font-size: .7rem;
             }
