@@ -1,17 +1,19 @@
 @use "sass:math";
-@import "variables";
+@import "./variables";
 
 .contenedor--personal {
     width: $ancho;
+    margin: 0 auto;
     padding-left: math.div($gap, 2);
     padding-right: math.div($gap, 2);
 
-    // a modo visual
+    
     height: 100vh;
-    max-width: 1024px;
+    max-width: 1440px;
+    
 }
 
-.rowper {
+.row-per {
     margin-top: math.div($gap, 2);
     display: flex;
     flex-wrap: wrap;
@@ -19,15 +21,66 @@
     margin-right: math.div($gap, -2);
 }
 
+[class*="colum-"], .colum {
+    width: $ancho;
+    max-width: $ancho;
+    padding-left: math.div($gap, 2);
+    padding-right: math.div($gap, 2);
+}
+
 
 .border-test {
     border: 1px solid yellow;
 }
 
-.colsper-ej {
+.colum {
+    flex: 1 0 0;
+}
+
+// @for $colum from 1 through $colums {
+//     .colum-#{$colum} {
+//         flex: 0 0 (100% / $colums) * $colum;
+//         max-width: (100% / $colums) * $colum;
+//     }
+
+// }
+
+
+.colum-per {
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: grid;
     place-items: center;
     border: 1px solid blue;
 }
+
+// mixin
+@mixin grid-system($mq){
+    .#{$mq} {
+        flex: 1 0 0;
+    }
+    @for $colum from 1 through $colums {
+        .#{$mq}-#{$colum} {
+            flex: 0 0 (100% / $colums) * $colum;
+            max-width: (100% / $colums) * $colum;
+        }
+    
+    }
+}
+
+// creando breakpoint 
+@media screen and (min-width: 576px) {
+    @include grid-system(col-sm)
+}
+@media screen and (min-width: 768px) {
+    @include grid-system(col-md)
+}
+@media screen and (min-width: 992px) {
+    @include grid-system(col-lg)
+}
+@media screen and (min-width: 1200px) {
+    @include grid-system(col-xl)
+}
+
+
+@include grid-system(colum);

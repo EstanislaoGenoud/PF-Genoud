@@ -1,0 +1,34 @@
+// grandes vueltas
+.titulo-gt {
+    text-align: center;
+}
+.grandes-vueltas {
+    width: $ancho;
+    position: relative;
+
+    .giro-de-italia {
+        display: flex;
+        width: 97%;
+        margin-left: 15px;
+        overflow-x: scroll;
+        gap: 1.4rem;
+        scrollbar-width: none;
+    }
+    .tour-de-francia {
+        display: flex;
+        width: 97%;
+        margin-left: 15px;
+        overflow-x: 15px;
+        gap: 1.4rem;
+        scrollbar-width: none;
+    }
+    .vuelta-españa {
+        display: flex;
+        width: 97%;
+        margin-left: 15px;
+        overflow-x: scroll;
+        gap: 1.4rem;
+        scrollbar-width: none;
+    }
+}
+// fin de grandes vueltas

@@ -64,6 +64,353 @@ body {
   display: none;
 }
 
+.titulos-index {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.titulos-index .categoria {
+  height: 100%;
+}
+
+#categoria {
+  display: flex;
+  height: 300px;
+  flex-flow: column wrap;
+  gap: 10px;
+  justify-content: center;
+}
+#categoria .continental, #categoria .continental-profesional, #categoria .world-teams {
+  text-align: center;
+}
+
+.peloton {
+  width: 100%;
+}
+.peloton img {
+  width: 100%;
+  height: 40%;
+}
+
+.contenedor--personal {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 100vh;
+  max-width: 1440px;
+}
+
+.row-per {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+[class*=colum-], .colum {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.border-test {
+  border: 1px solid yellow;
+}
+
+.colum {
+  flex: 1 0 0;
+}
+
+.colum-per {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid blue;
+}
+
+@media screen and (min-width: 576px) {
+  .col-sm {
+    flex: 1 0 0;
+  }
+  .col-sm-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .col-sm-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-sm-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .col-sm-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-sm-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .col-sm-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .col-sm-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-sm-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .col-sm-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col-md {
+    flex: 1 0 0;
+  }
+  .col-md-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .col-md-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .col-md-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .col-md-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-md-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .col-md-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .col-lg {
+    flex: 1 0 0;
+  }
+  .col-lg-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .col-lg-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-lg-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .col-lg-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-lg-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .col-lg-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-lg-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .col-lg-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-xl {
+    flex: 1 0 0;
+  }
+  .col-xl-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .col-xl-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-xl-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .col-xl-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-xl-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .col-xl-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .col-xl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-xl-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .col-xl-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .col-xl-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.colum {
+  flex: 1 0 0;
+}
+
+.colum-1 {
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+.colum-2 {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.colum-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.colum-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.colum-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.colum-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.colum-7 {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.colum-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.colum-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.colum-10 {
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.colum-11 {
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.colum-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 .fondo {
   width: 100%;
   height: 70vh;
@@ -99,68 +446,37 @@ body {
   text-align: center;
 }
 
-.titulos-index {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  gap: 20px;
-}
-.titulos-index .categoria {
-  height: 100%;
-}
-
-#categoria {
-  display: flex;
-  height: 300px;
-  flex-flow: column wrap;
-  gap: 10px;
-  justify-content: center;
-}
-#categoria .continental, #categoria .continental-profesional, #categoria .world-teams {
-  text-align: center;
-}
-
-.peloton {
-  width: 100%;
-}
-.peloton img {
-  width: 100%;
-  height: 40%;
-}
-
-.contenedor--personal {
-  width: 100%;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 100vh;
-  max-width: 1024px;
-}
-
-.rowper {
-  margin-top: 12px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
-}
-
-.border-test {
-  border: 1px solid yellow;
-}
-
-.colsper-ej {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: grid;
-  place-items: center;
-  border: 1px solid blue;
-}
-
 iframe {
   width: 450px;
   height: 300px;
+}
+
+.pie-de-pagina {
+  width: 100%;
+}
+.pie-de-pagina .pdp {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  z-index: 10;
+  align-content: center;
+  position: relative;
+  text-align: center;
+}
+.pie-de-pagina .logo--footer {
+  width: 75px;
+}
+.pie-de-pagina .texto-pdp {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  color: rgba(0, 0, 0, 0.342);
+}
+.pie-de-pagina .texto-pdp .sfl {
+  position: relative;
+  text-align: center;
 }
 
 .titulo-m {
@@ -277,34 +593,6 @@ iframe {
 }
 .formulario .btn {
   background-color: green;
-}
-
-.pie-de-pagina {
-  width: 100%;
-}
-.pie-de-pagina .pdp {
-  display: flex;
-  justify-content: center;
-  top: 0;
-  z-index: 10;
-  align-content: center;
-  position: relative;
-  text-align: center;
-}
-.pie-de-pagina .logo--footer {
-  width: 75px;
-}
-.pie-de-pagina .texto-pdp {
-  display: flex;
-  width: 100%;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
-  align-content: center;
-  color: rgba(0, 0, 0, 0.342);
-}
-.pie-de-pagina .texto-pdp .sfl {
-  position: relative;
-  text-align: center;
 }
 
 @media (max-width: 1240px) {
