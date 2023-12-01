@@ -65,16 +65,22 @@
     }
     @for $colum from 1 through $colums {
         .#{$mq}-#{$colum} {
-            flex: 0 0 (100% / $colums) * $colum;
-            max-width: (100% / $colums) * $colum;
+            flex: 0 0 math.div(100%, $colums) * $colum;
+            max-width: math.div(100%, $colums) * $colum;
         }
     
     }
 }
 
 // creando breakpoint 
+@media screen and (min-width: 375px) {
+    @include grid-system(colum-xs)
+}
 @media screen and (min-width: 390px) {
     @include grid-system(colum-xs)
+}
+@media screen and (min-width: 440px) {
+    @include grid-system(colum-sm)
 }
 @media screen and (min-width: 576px) {
     @include grid-system(colum-sm)
@@ -82,10 +88,13 @@
 @media screen and (min-width: 768px) {
     @include grid-system(colum-md)
 }
+@media screen and (min-width: 820px) {
+    @include grid-system(colum-lg)
+}
 @media screen and (min-width: 992px) {
     @include grid-system(colum-lg)
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1240px) {
     @include grid-system(colum-xl)
 }
 

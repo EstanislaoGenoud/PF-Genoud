@@ -509,6 +509,18 @@
         .navegacion--nav {
             display: none;
         }
+
+        .logo--container {
+            display: flex;
+            width: 30%;
+    
+            .logo {
+                width: 75px;
+                border-radius: 50%;
+                margin-right: 8px;
+                box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
+            }
+        }
     }
     .navegacion--nav .nav-item {
         display: flex;
@@ -530,11 +542,8 @@
         justify-content: start;
         align-items: start;
     }
-    .logo--container {
-        .logo {
-            width: 100%;
-        }
-    }
+    
+    
         // index
     h2,h3 {
         font-size: 1rem;
@@ -626,6 +635,17 @@
 
             .nav-item {
                 font-size: 0.8rem;
+            }
+        }
+        .logo--container {
+            display: flex;
+            width: 30%;
+
+            .logo {
+                width: 75px;
+                border-radius: 50%;
+                margin-right: 8px;
+                box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
             }
         }
     
