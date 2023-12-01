@@ -75,8 +75,127 @@
         text-align: center;
     }
     // fin de fondos
+    // grandes vueltas
+    .grandes-vueltas {
+        position: relative;
+        left: 150px;
+        width: 85vw;
+        
+    iframe {
+        width: 240px;
+        height: 200px;
+    }
 }
-@media (max-width:920px) {
+// fin de grandes vueltas
+}
+@media (max-width:1040px) {
+    .navegacion--nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: initial;
+        align-items: initial;
+        align-content: initial;
+        position: relative;
+        right: 260px;
+    
+        .logo--container .logo {
+            width: 60%;
+        }
+        .nav--item {
+            width: auto;
+            padding: 10px;
+            font-size: 1.5rem;
+
+            a {
+                color: black;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                text-decoration: none;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    #check--menu:checked~.navegacion--nav {
+        display: flex;
+        background-color: #76B28E7D;
+        width: $ancho;
+        height: 40vh;
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        top: 52px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    // fondos
+    .fondo {
+        width: $ancho;
+        height: 70vh;
+        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .fondo-monumentos {
+        width: $ancho;
+        height: 70vh;
+        background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .fondo-gt {
+        width: $ancho;
+        height: 70vh;
+        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    // fin de fondos
+    // index
+    .contenedor--personal {
+        .colum {
+            img {
+                width: 550px;
+            }
+        }
+        .colum-text {
+            width: $ancho;
+            height: 380px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    }
+    // fin de index
+    // grandes vueltas
+    // grandes vueltas
+    
+    .grandes-vueltas {
+        position: relative;
+        left: 150px;
+        width: 75vw;
+        
+    iframe {
+        width: 240px;
+        height: 200px;
+    }
+}
+    // fin de grandes vueltas
+}
+@media (max-width:992px) {
     .navegacion label {
         display: block;
     }
@@ -272,6 +391,9 @@
         font-size: 1.3rem;
     }
     // index
+    .categorias {
+        height: 35vh;
+    }
     #categoria {
         display: flex;
         flex-flow: row wrap;
@@ -357,6 +479,9 @@
         }
     }
        // index
+    .categorias {
+        height: 35vh;
+    }
     #categoria {
         display: flex;
         flex-flow: row wrap;
@@ -374,6 +499,21 @@
             right: 25px;
         }
     }
+    .contenedor--personal {
+        height: 45vh;
+        .colum {
+            img {
+                width: 450px;
+            }
+        }
+        .colum-text {
+            width: $ancho;
+            height: 285px;
+            text-align: center;
+            overflow: scroll;
+            font-size: 0.85rem;
+        }
+    }
         // fin de index
         // grandes vueltas
 .titulo-gt {
@@ -385,14 +525,274 @@
         height: 200px;
 }
     // fin de grandes vueltas
-} 
-@media (max-width:440px) {
+}
+@media (max-width: 720px) {
     .navegacion label {
         display: block;
     }
     .navegacion {
         .navegacion--nav {
             display: none;
+        }
+    }
+    .navegacion--nav .nav-item {
+        display: flex;
+        font-size: .7rem;
+        padding: 5px;
+        position: relative;
+        right: 35px;
+    }
+    #check--menu:checked~.navegacion--nav {
+        display: flex;
+        background-color: #76B28E7D;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        top: 75px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .logo--container {
+        .logo {
+            width: 60%;
+        }
+    }
+       // index
+    #categoria {
+        display: flex;
+        flex-flow: row wrap;
+        height: 350px;
+        font-size: 12px;
+        justify-content: space-between;
+
+        .continental {
+            position: relative;
+            right: 20px;
+        }
+
+        .continental-profesional {
+            position: relative;
+            right: 25px;
+        }
+    }
+    .contenedor--personal {
+        height: 45vh;
+        .colum {
+            img {
+                width: 425px;
+            }
+        }
+        .colum-text {
+            width: $ancho;
+            height: 285px;
+            text-align: center;
+            overflow: scroll;
+            font-size: 0.85rem;
+        }
+    }
+        // fin de index
+        // grandes vueltas
+.titulo-gt {
+        position: relative;
+        left: 20px;
+    }
+.grandes-vueltas iframe {
+        width: 240px;
+        height: 200px;
+}
+    // fin de grandes vueltas
+}
+@media (max-width:668px) {
+    .navegacion label {
+        display: block;
+    }
+    .navegacion {
+        .navegacion--nav {
+            display: none;
+        }
+    }
+    .navegacion--nav .nav-item {
+        display: flex;
+        font-size: .7rem;
+        padding: 5px;
+        position: relative;
+        right: 35px;
+    }
+    #check--menu:checked~.navegacion--nav {
+        display: flex;
+        background-color: #76B28E7D;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        top: 75px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .logo--container {
+        .logo {
+            width: 60%;
+        }
+    }
+       // index
+    h2,h3 {
+        font-size: 1rem;
+        }
+    .categorias {
+        height: 35vh;
+    }
+    #categoria {
+        display: flex;
+        flex-flow: row wrap;
+        height: 450px;
+        font-size: 1rem;
+        justify-content: space-between;
+        
+        .continental {
+            font-size: .7rem;
+            }
+        .continental-profesional {
+            font-size: .7rem;
+            }
+        .world-teams {
+            font-size: .7rem;
+        }
+    }
+    .contenedor--personal {
+        height: 45vh;
+        .colum {
+            img {
+                width: 350px;
+            }
+        }
+        .colum-text {
+            width: $ancho;
+            height: 285px;
+            text-align: center;
+            overflow: scroll;
+            font-size: 0.85rem;
+        }
+    }
+        // fin de index
+        // grandes vueltas
+.titulo-gt {
+        position: relative;
+        left: 20px;
+    }
+.grandes-vueltas iframe {
+        width: 240px;
+        height: 200px;
+}
+    // fin de grandes vueltas
+}
+@media (max-width:638px) {
+    .navegacion label {
+        display: block;
+    }
+    .navegacion {
+        .navegacion--nav {
+            display: none;
+        }
+    }
+    .navegacion--nav .nav-item {
+        display: flex;
+        font-size: .7rem;
+        padding: 5px;
+        position: relative;
+        right: 35px;
+    }
+    #check--menu:checked~.navegacion--nav {
+        display: flex;
+        background-color: #76B28E7D;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        top: 75px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .logo--container {
+        .logo {
+            width: 60%;
+        }
+    }
+       // index
+        h2,h3 {
+            font-size: 1rem;
+            }
+        .categorias {
+            height: 35vh;
+        }
+        #categoria {
+            display: flex;
+            flex-flow: row wrap;
+            height: 450px;
+            font-size: 1rem;
+            justify-content: space-between;
+            
+            .continental {
+                font-size: .7rem;
+                }
+            .continental-profesional {
+                font-size: .7rem;
+                }
+            .world-teams {
+                font-size: .7rem;
+            }
+        }
+        .contenedor--personal {
+            height: 45vh;
+            .colum {
+                img {
+                    width: 350px;
+                }
+            }
+            .colum-text {
+                width: $ancho;
+                height: 285px;
+                text-align: center;
+                overflow: scroll;
+                font-size: 0.85rem;
+            }
+        }
+        // fin de index
+        // grandes vueltas
+.titulo-gt {
+        position: relative;
+        left: 20px;
+    }
+.grandes-vueltas iframe {
+        width: 240px;
+        height: 200px;
+}
+    // fin de grandes vueltas
+}
+@media (max-width:576px) {
+    .navegacion label {
+        display: block;
+    }
+    .navegacion {
+        .navegacion--nav {
+            display: none;
+        }
+        .logo--container {
+            display: flex;
+            width: 30%;
+    
+            .logo {
+                width: 75px;
+                border-radius: 50%;
+                margin-right: 8px;
+                box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
+            }
         }
     }
     .navegacion--nav .nav-item {
@@ -415,15 +815,138 @@
         justify-content: start;
         align-items: start;
     }
-    .logo--container {
-        .logo {
-            width: 100%;
+        // index
+    h2,h3 {
+        font-size: 1rem;
         }
+    .categorias {
+        height: 35vh;
+    }
+    #categoria {
+        display: flex;
+        flex-flow: row wrap;
+        height: 450px;
+        font-size: 1rem;
+        justify-content: space-between;
+        
+        .continental {
+            font-size: .7rem;
+            }
+        .continental-profesional {
+            position: relative;
+            right: 190px;
+            font-size: .7rem;
+            }
+        .world-teams {
+            position: relative;
+            left: 410px;
+            bottom: 230px;
+            font-size: .7rem;
+        }
+    }
+    .contenedor--personal {
+        height: 45vh;
+        .colum {
+            img {
+                width: 350px;
+            }
+        }
+        .colum-text {
+            width: $ancho;
+            height: 285px;
+            text-align: center;
+            overflow: scroll;
+            font-size: 0.85rem;
+        }
+    }
+        // fin index
+
+        // monumentos
+        .monumetos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: initial;
+            justify-content: space-around;
+
+            iframe {
+                width: 350px;
+                height: 300px;
+
+            }
+                .box-1, .box-2, .box-3, .box-4, .box-5 {
+                    border: 0;
+                }
+                div ul {
+                    font-size: .7rem;
+                    position: relative;
+                    right: 70px;
+                }
+        }
+        // fin de monumentos
+
+        // grandes vueltas
+        .titulo-gt {
+            font-size: 1.3rem;
+            position: relative;
+            left: 5px;
+        }
+        .grandes-vueltas {
+            width: 530px;
+        iframe {
+            width: 250px;
+            height: 200px;
+        }
+    }
+        // fin de grandes vueltas
+}
+@media (max-width:440px) {
+    .navegacion label {
+        display: block;
+    }
+    .navegacion {
+        .navegacion--nav {
+            display: none;
+        }
+        .logo--container {
+            display: flex;
+            width: 30%;
+    
+            .logo {
+                width: 75px;
+                border-radius: 50%;
+                margin-right: 8px;
+                box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
+            }
+        }
+    }
+    .navegacion--nav .nav-item {
+        display: flex;
+        font-size: .7rem;
+        padding: 4px;
+        position: relative;
+        right: 35px;
+    }
+    #check--menu:checked~.navegacion--nav {
+        display: flex;
+        background-color: #76B28E7D;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        top: 75px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
     }
         // index
     h2,h3 {
         font-size: 1rem;
         }
+    .categorias {
+        height: 70vh;
+    }
     #categoria {
         display: flex;
         flex-flow: row wrap;
@@ -433,23 +956,24 @@
         
         .continental {
             position: relative;
-            left: 80px;
+            left: 85px;
             font-size: .7rem;
             }
         .continental-profesional {
             position: relative;
             left: 110px;
             font-size: .7rem;
-            bottom: 75px;
+            bottom: 65px;
             }
         .world-teams {
             position: relative;
-            top: 65px;
-            right: 175px;
+            left: -175px;
+            top: 100px;
             font-size: .7rem;
         }
     }
     .contenedor--personal {
+        height: 45vh;
         .colum {
             img {
                 width: 250px;
@@ -457,7 +981,7 @@
         }
         .colum-text {
             width: $ancho;
-            height: 280px;
+            height: 200px;
             text-align: center;
             overflow: scroll;
             font-size: 0.75rem;
@@ -569,11 +1093,12 @@
         .world-teams {
             position: relative;
             top: 65px;
-            right: 145px;
+            left: -145px;
             font-size: .7rem;
         }
     }
     .contenedor--personal {
+        height: 40vh;
         .colum {
             img {
                 width: 250px;
@@ -581,7 +1106,7 @@
         }
         .colum-text {
             width: $ancho;
-            height: 250px;
+            height: 165px;
             text-align: center;
             overflow: scroll;
             font-size: 0.75rem;
@@ -728,12 +1253,12 @@
             }
             .world-teams {
                 position: relative;
-                top: 65px;
-                right: 145px;
+                left: -145px;
                 font-size: .7rem;
             }
         }
         .contenedor--personal {
+            height: 40vh;
             .colum {
                 img {
                     width: 230px;
@@ -741,7 +1266,7 @@
             }
             .colum-text {
                 width: $ancho;
-                height: 250px;
+                height: 200px;
                 text-align: center;
                 overflow: scroll;
                 font-size: 0.75rem;

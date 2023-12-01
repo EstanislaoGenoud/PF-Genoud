@@ -85,6 +85,15 @@
 @media screen and (min-width: 576px) {
     @include grid-system(colum-sm)
 }
+@media screen and (min-width: 638px) {
+    @include grid-system(colum-md)
+}
+@media screen and (min-width: 668px) {
+    @include grid-system(colum-md)
+}
+@media screen and (min-width: 720px) {
+    @include grid-system(colum-md)
+}
 @media screen and (min-width: 768px) {
     @include grid-system(colum-md)
 }
@@ -93,6 +102,9 @@
 }
 @media screen and (min-width: 992px) {
     @include grid-system(colum-lg)
+}
+@media screen and (min-width: 1040px) {
+    @include grid-system(colum-xl)
 }
 @media screen and (min-width: 1240px) {
     @include grid-system(colum-xl)

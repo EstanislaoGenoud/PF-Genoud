@@ -580,6 +580,165 @@ iframe {
     max-width: 100%;
   }
 }
+@media screen and (min-width: 638px) {
+  .colum-md {
+    flex: 1 0 0;
+  }
+  .colum-md-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .colum-md-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .colum-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .colum-md-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .colum-md-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .colum-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .colum-md-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .colum-md-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .colum-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .colum-md-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .colum-md-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .colum-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 668px) {
+  .colum-md {
+    flex: 1 0 0;
+  }
+  .colum-md-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .colum-md-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .colum-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .colum-md-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .colum-md-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .colum-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .colum-md-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .colum-md-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .colum-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .colum-md-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .colum-md-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .colum-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 720px) {
+  .colum-md {
+    flex: 1 0 0;
+  }
+  .colum-md-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .colum-md-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .colum-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .colum-md-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .colum-md-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .colum-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .colum-md-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .colum-md-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .colum-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .colum-md-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .colum-md-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .colum-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .colum-md {
     flex: 1 0 0;
@@ -735,6 +894,59 @@ iframe {
     max-width: 91.6666666667%;
   }
   .colum-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .colum-xl {
+    flex: 1 0 0;
+  }
+  .colum-xl-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .colum-xl-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .colum-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .colum-xl-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .colum-xl-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .colum-xl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .colum-xl-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .colum-xl-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .colum-xl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .colum-xl-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .colum-xl-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .colum-xl-12 {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -929,8 +1141,109 @@ iframe {
     display: inline-block;
     text-align: center;
   }
+  .grandes-vueltas {
+    position: relative;
+    left: 150px;
+    width: 85vw;
+  }
+  .grandes-vueltas iframe {
+    width: 240px;
+    height: 200px;
+  }
 }
-@media (max-width: 920px) {
+@media (max-width: 1040px) {
+  .navegacion--nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: initial;
+    align-content: initial;
+    position: relative;
+    right: 260px;
+  }
+  .navegacion--nav .logo--container .logo {
+    width: 60%;
+  }
+  .navegacion--nav .nav--item {
+    width: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+  .navegacion--nav .nav--item a {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+  }
+  .navegacion--nav .nav--item a:hover {
+    cursor: pointer;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 52px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .fondo {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .fondo-monumentos {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .fondo-gt {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .contenedor--personal .colum img {
+    width: 550px;
+  }
+  .contenedor--personal .colum-text {
+    width: 100%;
+    height: 380px;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .grandes-vueltas {
+    position: relative;
+    left: 150px;
+    width: 75vw;
+  }
+  .grandes-vueltas iframe {
+    width: 240px;
+    height: 200px;
+  }
+}
+@media (max-width: 992px) {
   .navegacion label {
     display: block;
   }
@@ -1098,6 +1411,9 @@ iframe {
   h3 {
     font-size: 1.3rem;
   }
+  .categorias {
+    height: 35vh;
+  }
   #categoria {
     display: flex;
     flex-flow: row wrap;
@@ -1166,6 +1482,9 @@ iframe {
   .logo--container .logo {
     width: 60%;
   }
+  .categorias {
+    height: 35vh;
+  }
   #categoria {
     display: flex;
     flex-flow: row wrap;
@@ -1181,6 +1500,19 @@ iframe {
     position: relative;
     right: 25px;
   }
+  .contenedor--personal {
+    height: 45vh;
+  }
+  .contenedor--personal .colum img {
+    width: 450px;
+  }
+  .contenedor--personal .colum-text {
+    width: 100%;
+    height: 285px;
+    text-align: center;
+    overflow: scroll;
+    font-size: 0.85rem;
+  }
   .titulo-gt {
     position: relative;
     left: 20px;
@@ -1190,12 +1522,237 @@ iframe {
     height: 200px;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 720px) {
   .navegacion label {
     display: block;
   }
   .navegacion .navegacion--nav {
     display: none;
+  }
+  .navegacion--nav .nav-item {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 5px;
+    position: relative;
+    right: 35px;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 75px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .logo--container .logo {
+    width: 60%;
+  }
+  #categoria {
+    display: flex;
+    flex-flow: row wrap;
+    height: 350px;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+  #categoria .continental {
+    position: relative;
+    right: 20px;
+  }
+  #categoria .continental-profesional {
+    position: relative;
+    right: 25px;
+  }
+  .contenedor--personal {
+    height: 45vh;
+  }
+  .contenedor--personal .colum img {
+    width: 425px;
+  }
+  .contenedor--personal .colum-text {
+    width: 100%;
+    height: 285px;
+    text-align: center;
+    overflow: scroll;
+    font-size: 0.85rem;
+  }
+  .titulo-gt {
+    position: relative;
+    left: 20px;
+  }
+  .grandes-vueltas iframe {
+    width: 240px;
+    height: 200px;
+  }
+}
+@media (max-width: 668px) {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion .navegacion--nav {
+    display: none;
+  }
+  .navegacion--nav .nav-item {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 5px;
+    position: relative;
+    right: 35px;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 75px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .logo--container .logo {
+    width: 60%;
+  }
+  h2, h3 {
+    font-size: 1rem;
+  }
+  .categorias {
+    height: 35vh;
+  }
+  #categoria {
+    display: flex;
+    flex-flow: row wrap;
+    height: 450px;
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+  #categoria .continental {
+    font-size: 0.7rem;
+  }
+  #categoria .continental-profesional {
+    font-size: 0.7rem;
+  }
+  #categoria .world-teams {
+    font-size: 0.7rem;
+  }
+  .contenedor--personal {
+    height: 45vh;
+  }
+  .contenedor--personal .colum img {
+    width: 350px;
+  }
+  .contenedor--personal .colum-text {
+    width: 100%;
+    height: 285px;
+    text-align: center;
+    overflow: scroll;
+    font-size: 0.85rem;
+  }
+  .titulo-gt {
+    position: relative;
+    left: 20px;
+  }
+  .grandes-vueltas iframe {
+    width: 240px;
+    height: 200px;
+  }
+}
+@media (max-width: 638px) {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion .navegacion--nav {
+    display: none;
+  }
+  .navegacion--nav .nav-item {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 5px;
+    position: relative;
+    right: 35px;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 75px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .logo--container .logo {
+    width: 60%;
+  }
+  h2, h3 {
+    font-size: 1rem;
+  }
+  .categorias {
+    height: 35vh;
+  }
+  #categoria {
+    display: flex;
+    flex-flow: row wrap;
+    height: 450px;
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+  #categoria .continental {
+    font-size: 0.7rem;
+  }
+  #categoria .continental-profesional {
+    font-size: 0.7rem;
+  }
+  #categoria .world-teams {
+    font-size: 0.7rem;
+  }
+  .contenedor--personal {
+    height: 45vh;
+  }
+  .contenedor--personal .colum img {
+    width: 350px;
+  }
+  .contenedor--personal .colum-text {
+    width: 100%;
+    height: 285px;
+    text-align: center;
+    overflow: scroll;
+    font-size: 0.85rem;
+  }
+  .titulo-gt {
+    position: relative;
+    left: 20px;
+  }
+  .grandes-vueltas iframe {
+    width: 240px;
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion .navegacion--nav {
+    display: none;
+  }
+  .navegacion .logo--container {
+    display: flex;
+    width: 30%;
+  }
+  .navegacion .logo--container .logo {
+    width: 75px;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
   }
   .navegacion--nav .nav-item {
     display: flex;
@@ -1217,11 +1774,120 @@ iframe {
     justify-content: start;
     align-items: start;
   }
-  .logo--container .logo {
+  h2, h3 {
+    font-size: 1rem;
+  }
+  .categorias {
+    height: 35vh;
+  }
+  #categoria {
+    display: flex;
+    flex-flow: row wrap;
+    height: 450px;
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+  #categoria .continental {
+    font-size: 0.7rem;
+  }
+  #categoria .continental-profesional {
+    position: relative;
+    right: 190px;
+    font-size: 0.7rem;
+  }
+  #categoria .world-teams {
+    position: relative;
+    left: 410px;
+    bottom: 230px;
+    font-size: 0.7rem;
+  }
+  .contenedor--personal {
+    height: 45vh;
+  }
+  .contenedor--personal .colum img {
+    width: 350px;
+  }
+  .contenedor--personal .colum-text {
     width: 100%;
+    height: 285px;
+    text-align: center;
+    overflow: scroll;
+    font-size: 0.85rem;
+  }
+  .monumetos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: initial;
+    justify-content: space-around;
+  }
+  .monumetos iframe {
+    width: 350px;
+    height: 300px;
+  }
+  .monumetos .box-1, .monumetos .box-2, .monumetos .box-3, .monumetos .box-4, .monumetos .box-5 {
+    border: 0;
+  }
+  .monumetos div ul {
+    font-size: 0.7rem;
+    position: relative;
+    right: 70px;
+  }
+  .titulo-gt {
+    font-size: 1.3rem;
+    position: relative;
+    left: 5px;
+  }
+  .grandes-vueltas {
+    width: 530px;
+  }
+  .grandes-vueltas iframe {
+    width: 250px;
+    height: 200px;
+  }
+}
+@media (max-width: 440px) {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion .navegacion--nav {
+    display: none;
+  }
+  .navegacion .logo--container {
+    display: flex;
+    width: 30%;
+  }
+  .navegacion .logo--container .logo {
+    width: 75px;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
+  }
+  .navegacion--nav .nav-item {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 4px;
+    position: relative;
+    right: 35px;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 75px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
   h2, h3 {
     font-size: 1rem;
+  }
+  .categorias {
+    height: 70vh;
   }
   #categoria {
     display: flex;
@@ -1232,27 +1898,30 @@ iframe {
   }
   #categoria .continental {
     position: relative;
-    left: 80px;
+    left: 85px;
     font-size: 0.7rem;
   }
   #categoria .continental-profesional {
     position: relative;
     left: 110px;
     font-size: 0.7rem;
-    bottom: 75px;
+    bottom: 65px;
   }
   #categoria .world-teams {
     position: relative;
-    top: 65px;
-    right: 175px;
+    left: -175px;
+    top: 100px;
     font-size: 0.7rem;
+  }
+  .contenedor--personal {
+    height: 45vh;
   }
   .contenedor--personal .colum img {
     width: 250px;
   }
   .contenedor--personal .colum-text {
     width: 100%;
-    height: 280px;
+    height: 200px;
     text-align: center;
     overflow: scroll;
     font-size: 0.75rem;
@@ -1347,15 +2016,18 @@ iframe {
   #categoria .world-teams {
     position: relative;
     top: 65px;
-    right: 145px;
+    left: -145px;
     font-size: 0.7rem;
+  }
+  .contenedor--personal {
+    height: 40vh;
   }
   .contenedor--personal .colum img {
     width: 250px;
   }
   .contenedor--personal .colum-text {
     width: 100%;
-    height: 250px;
+    height: 165px;
     text-align: center;
     overflow: scroll;
     font-size: 0.75rem;
@@ -1481,16 +2153,18 @@ iframe {
   }
   #categoria .world-teams {
     position: relative;
-    top: 65px;
-    right: 145px;
+    left: -145px;
     font-size: 0.7rem;
+  }
+  .contenedor--personal {
+    height: 40vh;
   }
   .contenedor--personal .colum img {
     width: 230px;
   }
   .contenedor--personal .colum-text {
     width: 100%;
-    height: 250px;
+    height: 200px;
     text-align: center;
     overflow: scroll;
     font-size: 0.75rem;
