@@ -1572,7 +1572,7 @@ iframe {
     display: flex;
     flex-flow: row wrap;
     height: 350px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     justify-content: space-between;
   }
   #categoria .continental {
