@@ -181,18 +181,14 @@
     }
     // fin de index
     // grandes vueltas
-    // grandes vueltas
-    
     .grandes-vueltas {
-        position: relative;
-        left: 150px;
-        width: 75vw;
-        
-    iframe {
-        width: 240px;
-        height: 200px;
+        width: $ancho;
+        .giro-de-italia,
+        .tour-de-francia,
+        .vuelta-españa {
+        width: 75%;
+        }
     }
-}
     // fin de grandes vueltas
 }
 @media (max-width:992px) {
@@ -307,14 +303,10 @@
     }
     // fin de index
 
-    // grandes vueltas
+    
     .titulo-gt {
         position: relative;
         left: 20px;
-    }
-    .grandes-vueltas iframe {
-        width: 240px;
-        height: 200px;
     }
     // fin de grandes vueltas
 }
@@ -432,15 +424,20 @@
         }
     }
     // fin de index
-
+    
     // grandes vueltas
     .titulo-gt {
         position: relative;
         left: 20px;
     }
-    .grandes-vueltas iframe {
-        width: 240px;
-        height: 200px;
+    // grandes vueltas
+    .grandes-vueltas {
+        width: $ancho;
+        .giro-de-italia,
+        .tour-de-francia,
+        .vuelta-españa {
+        width: 63%;
+        }
     }
     // fin de grandes vueltas
 }
@@ -520,10 +517,6 @@
         position: relative;
         left: 20px;
     }
-.grandes-vueltas iframe {
-        width: 240px;
-        height: 200px;
-}
     // fin de grandes vueltas
 }
 @media (max-width: 720px) {
@@ -599,9 +592,15 @@
         position: relative;
         left: 20px;
     }
-.grandes-vueltas iframe {
-        width: 240px;
-        height: 200px;
+.grandes-vueltas {
+    position: relative;
+    left: 105px;
+
+    .giro-de-italia,
+        .tour-de-francia,
+        .vuelta-españa {
+        width: 72%;
+        }
 }
     // fin de grandes vueltas
 }
@@ -769,10 +768,16 @@
         position: relative;
         left: 20px;
     }
-.grandes-vueltas iframe {
-        width: 240px;
-        height: 200px;
-}
+    .grandes-vueltas {
+        position: relative;
+        left: 65px;
+    
+        .giro-de-italia,
+            .tour-de-francia,
+            .vuelta-españa {
+            width: 81%;
+            }
+    }
     // fin de grandes vueltas
 }
 @media (max-width:576px) {
@@ -892,12 +897,15 @@
             left: 5px;
         }
         .grandes-vueltas {
-            width: 530px;
-        iframe {
-            width: 250px;
-            height: 200px;
+            position: relative;
+            left: 40px;
+        
+            .giro-de-italia,
+                .tour-de-francia,
+                .vuelta-españa {
+                width: 90%;
+                }
         }
-    }
         // fin de grandes vueltas
 }
 @media (max-width:440px) {
@@ -935,7 +943,7 @@
         position: absolute;
         left: 0;
         z-index: 10;
-        top: 75px;
+        top: 62px;
         flex-direction: column;
         justify-content: start;
         align-items: start;
@@ -990,6 +998,135 @@
         // fin index
 
         // monumentos
+        .monumentos {
+            width: 100%;
+            position: relative;
+            left: 50px;
+            iframe {
+                width: 300px;
+                height: 300px;
+            }
+            .box-1, .box-2, .box-3, .box-4, .box-5 {
+                position: relative;
+                right: 100px;
+            }
+        }
+        
+
+        // fin de monumentos
+
+        // grandes vueltas
+        .titulo-gt {
+            font-size: 1.3rem;
+            position: relative;
+            left: 5px;
+        }
+        .grandes-vueltas {
+            position: relative;
+            left: 40px;
+        
+            .giro-de-italia,
+                .tour-de-francia,
+                .vuelta-españa {
+                width: 77%;
+                }
+                iframe {
+                    width: 150px;
+                    height: 150px;
+                }
+        }
+        // fin de grandes vueltas
+}
+@media (max-width:430px) {
+    .navegacion label {
+        display: block;
+    }
+    .navegacion {
+        .navegacion--nav {
+            display: none;
+        }
+        .logo--container {
+            display: flex;
+            width: 30%;
+    
+            .logo {
+                width: 75px;
+                border-radius: 50%;
+                margin-right: 8px;
+                box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
+            }
+        }
+    }
+    .navegacion--nav .nav-item {
+        display: flex;
+        font-size: .7rem;
+        padding: 4px;
+        position: relative;
+        right: 35px;
+    }
+    #check--menu:checked~.navegacion--nav {
+        display: flex;
+        background-color: #76B28E7D;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        top: 62px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+        // index
+    h2,h3 {
+        font-size: 1rem;
+        }
+    .categorias {
+        height: 70vh;
+    }
+    #categoria {
+        display: flex;
+        flex-flow: row wrap;
+        height: 450px;
+        font-size: 1rem;
+        justify-content: space-between;
+        
+        .continental {
+            position: relative;
+            left: 85px;
+            font-size: .7rem;
+            }
+        .continental-profesional {
+            position: relative;
+            left: 110px;
+            font-size: .7rem;
+            bottom: 65px;
+            }
+        .world-teams {
+            position: relative;
+            left: -155px;
+            top: 100px;
+            font-size: .7rem;
+        }
+    }
+    .contenedor--personal {
+        height: 45vh;
+        .colum {
+            img {
+                width: 250px;
+            }
+        }
+        .colum-text {
+            width: $ancho;
+            height: 200px;
+            text-align: center;
+            overflow: scroll;
+            font-size: 0.75rem;
+        }
+    }
+        // fin index
+
+        // monumentos
         .monumetos {
             display: flex;
             flex-direction: row;
@@ -1019,9 +1156,19 @@
             position: relative;
             left: 5px;
         }
-        .grandes-vueltas iframe {
-            width: 350px;
-            height: 300px;
+        .grandes-vueltas {
+            position: relative;
+            left: 40px;
+        
+            .giro-de-italia,
+                .tour-de-francia,
+                .vuelta-españa {
+                width: 77%;
+                }
+                iframe {
+                    width: 150px;
+                    height: 150px;
+                }
         }
         // fin de grandes vueltas
 }
@@ -1061,7 +1208,7 @@
         position: absolute;
         left: 0;
         z-index: 10;
-        top: 75px;
+        top: 62px;
         flex-direction: column;
         justify-content: start;
         align-items: start;
@@ -1144,9 +1291,19 @@
             position: relative;
             left: 5px;
         }
-        .grandes-vueltas iframe {
-            width: 350px;
-            height: 300px;
+        .grandes-vueltas {
+            position: relative;
+            left: 40px;
+        
+            .giro-de-italia,
+                .tour-de-francia,
+                .vuelta-españa {
+                width: 77%;
+                }
+                iframe {
+                    width: 150px;
+                    height: 150px;
+                }
         }
         // fin de grandes vueltas
 }
@@ -1186,7 +1343,7 @@
         position: absolute;
         left: 0;
         z-index: 10;
-        top: 75px;
+        top: 62px;
         flex-direction: column;
         justify-content: start;
         align-items: start;
@@ -1269,9 +1426,19 @@
             position: relative;
             left: 5px;
         }
-        .grandes-vueltas iframe {
-            width: 350px;
-            height: 300px;
+        .grandes-vueltas {
+            position: relative;
+            left: 30px;
+        
+            .giro-de-italia,
+                .tour-de-francia,
+                .vuelta-españa {
+                width: 80%;
+                }
+                iframe {
+                    width: 150px;
+                    height: 150px;
+                }
         }
         // fin de grandes vueltas
 }
@@ -1308,7 +1475,7 @@
         position: absolute;
         left: 0;
         z-index: 10;
-        top: 75px;
+        top: 62px;
         flex-direction: column;
         justify-content: start;
         align-items: start;
@@ -1401,27 +1568,18 @@
     
         // monumentos
         .monumentos {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-content: initial;
-            justify-content: space-around;
-    
+            width: 100%;
+            position: relative;
+            left: 50px;
             iframe {
-                width: 350px;
+                width: 300px;
                 height: 300px;
             }
-    
             .box-1, .box-2, .box-3, .box-4, .box-5 {
-                border: 0;
-            }
-    
-            div ul {
-                font-size: 0.7rem;
                 position: relative;
-                right: 70px;
+                right: 100px;
             }
-            }
+        }
             // fin de monumentos
     
             // grandes vueltas
@@ -1430,8 +1588,180 @@
                 position: relative;
                 left: 5px;
             }
-            .grandes-vueltas iframe {
-                width: 350px;
-                height: 300px;
+            .grandes-vueltas {
+                position: relative;
+                left: 10px;
+            
+                .giro-de-italia,
+                    .tour-de-francia,
+                    .vuelta-españa {
+                    width: 91%;
+                    }
+                    iframe {
+                        width: 150px;
+                        height: 150px;
+                    }
+            }
+}
+@media (max-width:360px) {
+    .navegacion label {
+        display: block;
+    }
+    .navegacion {
+        .navegacion--nav {
+            display: none;
+
+            .nav-item {
+                font-size: 0.8rem;
+            }
+        }
+        .logo--container {
+            display: flex;
+            width: 30%;
+
+            .logo {
+                width: 75px;
+                border-radius: 50%;
+                margin-right: 8px;
+                box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
+            }
+        }
+    
+    }
+    #check--menu:checked~.navegacion--nav {
+        display: flex;
+        background-color: #76B28E7D;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        top: 62px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .logo--container {
+        .logo {
+            width: 40%;
+        }
+    }
+    // fondos
+    .fondo {
+        width: 100%;
+        height: 30vh;
+        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.805) 100%), url(../images/fondo1.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .fondo-monumentos {
+        width: 100%;
+        height: 30vh;
+        background-image: linear-gradient(to top, rgba(16, 17, 98, 0.61) 0%, rgba(65, 9, 9, 0.5) 100%), url(../images/tour-flandes.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    .fondo-gt {
+        width: 100%;
+        height: 30vh;
+        background-image: linear-gradient(to top, rgba(16, 16, 98, 0.729 ) 0%, rgba(65, 9, 9, 0.329) 100%), url(../images/tour-de-france.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    // fin de fondos
+
+        // index
+        h2,h3 {
+            font-size: 1rem;
+        }
+        #categoria {
+            display: flex;
+            flex-flow: row wrap;
+            height: 450px;
+            font-size: 1rem;
+            justify-content: space-between;
+    
+            .continental {
+                position: relative;
+                right: 15px;
+                left: 50px;
+                font-size: .7rem;
+            }
+            .continental-profesional {
+                position: relative;
+                left: 75px;
+                font-size: .7rem;
+                bottom: 75px;
+            }
+            .world-teams {
+                position: relative;
+                left: -125px;
+                font-size: .7rem;
+            }
+        }
+        .contenedor--personal {
+            height: 40vh;
+            .colum {
+                img {
+                    width: 230px;
+                }
+            }
+            .colum-text {
+                width: $ancho;
+                height: 200px;
+                text-align: center;
+                overflow: scroll;
+                font-size: 0.75rem;
+            }
+        }
+        // fin index
+    
+        // monumentos
+        .monumentos {
+            width: 100%;
+            position: relative;
+            left: 50px;
+            iframe {
+                width: 250px;
+                height: 250px;
+            }
+            .box-1, .box-2, .box-3, .box-4, .box-5 {
+                position: relative;
+                right: 150px;
+                font-size: 0.8rem;
+            }
+        }
+            // fin de monumentos
+    
+            // grandes vueltas
+            .titulo-gt {
+                font-size: 1.3rem;
+                position: relative;
+                left: 5px;
+            }
+            .grandes-vueltas {
+                position: relative;
+                left: 10px;
+            
+                .giro-de-italia,
+                    .tour-de-francia,
+                    .vuelta-españa {
+                    width: 91%;
+                    }
+                    iframe {
+                        width: 150px;
+                        height: 150px;
+                    }
             }
 }

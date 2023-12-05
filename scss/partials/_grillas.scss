@@ -37,15 +37,6 @@
     flex: 1 0 0;
 }
 
-// @for $colum from 1 through $colums {
-//     .colum-#{$colum} {
-//         flex: 0 0 (100% / $colums) * $colum;
-//         max-width: (100% / $colums) * $colum;
-//     }
-
-// }
-
-
 .colum-per {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -73,6 +64,9 @@
 }
 
 // creando breakpoint 
+@media screen and (min-width: 360px) {
+    @include grid-system(colum-xs)
+}
 @media screen and (min-width: 375px) {
     @include grid-system(colum-xs)
 }
@@ -80,6 +74,9 @@
     @include grid-system(colum-xs)
 }
 @media screen and (min-width: 414px) {
+    @include grid-system(colum-sm)
+}
+@media screen and (min-width: 430px) {
     @include grid-system(colum-sm)
 }
 @media screen and (min-width: 440px) {
