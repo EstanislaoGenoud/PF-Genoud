@@ -686,6 +686,59 @@ iframe {
     max-width: 100%;
   }
 }
+@media screen and (min-width: 540px) {
+  .colum-sm {
+    flex: 1 0 0;
+  }
+  .colum-sm-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .colum-sm-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .colum-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .colum-sm-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .colum-sm-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .colum-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .colum-sm-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .colum-sm-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .colum-sm-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .colum-sm-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .colum-sm-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .colum-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 @media screen and (min-width: 576px) {
   .colum-sm {
     flex: 1 0 0;
@@ -2012,6 +2065,117 @@ iframe {
     width: 90%;
   }
 }
+@media (max-width: 540px) {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion .navegacion--nav {
+    display: none;
+  }
+  .navegacion .logo--container {
+    display: flex;
+    width: 30%;
+  }
+  .navegacion .logo--container .logo {
+    width: 75px;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.265);
+  }
+  .navegacion--nav .nav-item {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 4px;
+    position: relative;
+    right: 35px;
+  }
+  #check--menu:checked ~ .navegacion--nav {
+    display: flex;
+    background-color: rgba(118, 178, 142, 0.4901960784);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 75px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  h2, h3 {
+    font-size: 1rem;
+  }
+  .categorias {
+    height: 35vh;
+  }
+  #categoria {
+    display: flex;
+    flex-flow: row wrap;
+    height: 450px;
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+  #categoria .continental {
+    font-size: 0.6rem;
+  }
+  #categoria .continental-profesional {
+    position: relative;
+    right: 175px;
+    font-size: 0.6rem;
+  }
+  #categoria .world-teams {
+    position: relative;
+    left: 380px;
+    bottom: 230px;
+    font-size: 0.6rem;
+  }
+  .contenedor--personal {
+    height: 45vh;
+  }
+  .contenedor--personal .colum img {
+    width: 350px;
+  }
+  .contenedor--personal .colum-text {
+    width: 100%;
+    height: 285px;
+    text-align: center;
+    overflow: scroll;
+    font-size: 0.85rem;
+  }
+  .monumetos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: initial;
+    justify-content: space-around;
+  }
+  .monumetos iframe {
+    width: 350px;
+    height: 300px;
+  }
+  .monumetos .box-1, .monumetos .box-2, .monumetos .box-3, .monumetos .box-4, .monumetos .box-5 {
+    border: 0;
+  }
+  .monumetos div ul {
+    font-size: 0.7rem;
+    position: relative;
+    right: 70px;
+  }
+  .titulo-gt {
+    font-size: 1.3rem;
+    position: relative;
+    left: 5px;
+  }
+  .grandes-vueltas {
+    position: relative;
+    left: 40px;
+  }
+  .grandes-vueltas .giro-de-italia,
+  .grandes-vueltas .tour-de-francia,
+  .grandes-vueltas .vuelta-españa {
+    width: 90%;
+  }
+}
 @media (max-width: 440px) {
   .navegacion label {
     display: block;
@@ -2187,7 +2351,7 @@ iframe {
   }
   #categoria .world-teams {
     position: relative;
-    left: -155px;
+    left: -165px;
     top: 100px;
     font-size: 0.7rem;
   }

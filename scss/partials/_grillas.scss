@@ -82,6 +82,9 @@
 @media screen and (min-width: 440px) {
     @include grid-system(colum-sm)
 }
+@media screen and (min-width: 540px) {
+    @include grid-system(colum-sm)
+}
 @media screen and (min-width: 576px) {
     @include grid-system(colum-sm)
 }
